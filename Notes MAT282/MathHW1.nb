@@ -1,0 +1,2608 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    112476,       2598]
+NotebookOptionsPosition[    110225,       2553]
+NotebookOutlinePosition[    110592,       2569]
+CellTagsIndexPosition[    110549,       2566]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["10.4 A (Homework)", "Title",
+ CellChangeTimes->{{3.763169276330601*^9, 
+  3.7631692983601503`*^9}},ExpressionUUID->"c3dc26b0-565c-44f3-b4ec-\
+d67a6bd07a90"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"930c49c3-ae54-4a0c-b7de-4a0a6d889b48"],
+
+Cell[CellGroupData[{
+
+Cell["Problem #1", "Subchapter",
+ CellChangeTimes->{{3.763172173651532*^9, 
+  3.763172177269696*^9}},ExpressionUUID->"898daa66-3608-4ee1-9166-\
+c3d844635fa8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Find", " ", "the", " ", "area", " ", "of", " ", "the", " ", "region", " ",
+     "that", " ", "is", " ", "bounded", " ", "by", " ", "the", " ", "given", 
+    " ", "curve", " ", "and", " ", "lies", " ", "in", " ", "the", " ", 
+    "specific", " ", "sector"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", "Given", "*)"}], " ", 
+  RowBox[{"A", " ", "=", " ", 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     SubscriptBox["\[Theta]", "1"], 
+     SubscriptBox["\[Theta]", "2"]], 
+    RowBox[{
+     FractionBox["1", "2"], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"F", "[", "\[Theta]_", "]"}], ")"}], "2"], 
+     RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7631693037740507`*^9, 3.763169304987671*^9}, {
+  3.7631694978308725`*^9, 3.7631695479100623`*^9}, {3.763170178125527*^9, 
+  3.763170208462926*^9}, {3.7631702573487387`*^9, 
+  3.7631703795150795`*^9}},ExpressionUUID->"5641eea2-cc5a-46d0-8907-\
+08dc77224b28"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"r", " ", "=", " ", 
+        SuperscriptBox["e", 
+         RowBox[{
+          RowBox[{"-", "\[Theta]"}], "/", "10"}]]}], ";"}], " ", "\[Implies]",
+       " ", 
+      RowBox[{"Ln", "[", "r", "]"}]}], " ", "=", " ", 
+     FractionBox[
+      RowBox[{"-", "\[Theta]"}], "10"]}], ";"}], " ", "\[Implies]", " ", 
+   "\[Theta]"}], " ", "=", " ", 
+  RowBox[{
+   RowBox[{"-", "10"}], " ", 
+   RowBox[{"Ln", "[", "r", "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    FractionBox["\[Pi]", "2"], "\[LessEqual]", "\[Theta]", "\[LessEqual]", 
+    "\[Pi]"}], ";"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["A", "r"], "=", 
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", 
+     FractionBox["\[Pi]", "2"], "\[Pi]"], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       SuperscriptBox["e", 
+        FractionBox[
+         RowBox[{"-", "\[Theta]"}], "10"]], ")"}], "2"], 
+     RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"u", "=", " ", 
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     RowBox[{"-", "\[Theta]"}], "10"], "\[Implies]", " ", 
+    RowBox[{
+     RowBox[{"-", "10"}], "du"}]}], " ", "=", " ", 
+   RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  SubscriptBox["A", "r"], "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"-", "5"}], 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      FractionBox["\[Pi]", "2"], "\[Pi]"], 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        SuperscriptBox["e", "u"], ")"}], "2"], 
+      RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", 
+   " "}]}]}], "Input",
+ CellChangeTimes->{{3.7631695592978716`*^9, 3.7631695898711605`*^9}, {
+  3.763169696259559*^9, 3.7631697500409403`*^9}, {3.7631698074670086`*^9, 
+  3.7631698419788103`*^9}, {3.7631700307155213`*^9, 3.763170141292119*^9}, {
+  3.763170227243975*^9, 3.7631702514590354`*^9}, {3.7631704831387463`*^9, 
+  3.7631708719472003`*^9}, {3.763171673874365*^9, 
+  3.76317172569901*^9}},ExpressionUUID->"0b059a31-6a57-43f3-ba8d-\
+001d3fc6ae4f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "integrate (1/2) * (e^(- \[Theta]/10))^2 from \[Pi]/2 to \[Pi]", 
+   Typeset`opts$$ = {
+   AppearanceElements -> {
+     "Extrusion", "Warnings", "Assumptions", "Pods", "Unsuccessful"}, 
+    Asynchronous -> All, 
+    Method -> {
+     "ExtrusionChosen" -> {
+       "Fast parse", "Fast parse", 1, 0, "Input", 
+        "Integrate[(1/2)*(E^(-(\[Theta]/10)))^2, {\[Theta], Pi/2, Pi}]"}, 
+      "ExtrusionOpen" -> True, 
+      "Formats" -> {"cell", "minput", "moutput", "msound", "dataformats"}}, 
+    PodStates -> {"Input__Step-by-step solution", "Input__Hide steps"}}, 
+   Typeset`elements$$ = {
+   "Extrusion", "Warnings", "Assumptions", "Pods", "Unsuccessful"}, 
+   Typeset`pod1$$ = XMLElement[
+   "pod", {"title" -> "Definite integral", "scanner" -> "Integral", "id" -> 
+     "Input", "position" -> "100", "error" -> "false", "numsubpods" -> "1", 
+     "primary" -> "true"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {
+        "Integrate[1/(2 E^(\[Theta]/5)), {\[Theta], Pi/2, Pi}]"}], 
+       XMLElement["moutput", {}, {"(5 (-1 + E^(Pi/10)))/(2 E^(Pi/5))"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              TagBox[
+               RowBox[{
+                 SubsuperscriptBox["\[Integral]", 
+                  FractionBox["\[Pi]", "2"], "\[Pi]"], 
+                 RowBox[{
+                   RowBox[{
+                    FractionBox["1", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Theta]", "/", "10"}]}]], ")"}], "2"]}], 
+                   RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}], HoldForm], 
+              "\[LongEqual]", 
+              TagBox[
+               RowBox[{
+                 FractionBox["5", "2"], " ", 
+                 SuperscriptBox["\[ExponentialE]", 
+                  RowBox[{"-", 
+                    RowBox[{"\[Pi]", "/", "5"}]}]], " ", 
+                 RowBox[{"(", 
+                   RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]], "-", 
+                    RowBox[{"1"}]}], ")"}]}], Identity], "\[TildeTilde]", 
+              TagBox["0.4922864998938558992`4.553834326534665", Identity]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "More digits", "input" -> "Input__More digits"}, {}]}]}], 
+   Typeset`pod2$$ = XMLElement[
+   "pod", {"title" -> "Visual representation of the integral", "scanner" -> 
+     "Integral", "id" -> "VisualRepresentationOfTheIntegral", "position" -> 
+     "200", "error" -> "false", "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {"Plot[1/(2 E^(\[Theta]/5)), {\[Theta], Pi/2, Pi}]"}], 
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            GraphicsBox[{{
+               GraphicsComplexBox[CompressedData["
+1:eJw1lH0w1AkYx/fN7v4i2qwjxZKWtiMk2jnyPKhrK0qGvOXUXiEvrSsaEpU6
+XLE1dZoaSqXz0vstmiOztutyLl3ut69Jheh6wYXuaG3s7c1cz8wzz3z/eD7z
+zPc78ziLJRE7aBQKZaOp/5tGx94tBmc9JAbGZ2Un6mDgAufm6gt6UDyP6bn2
+hQ4yul9neQqmwLb90MnZ1jq4y409yqyfgqpHwfnr/9LC4sE5NfGuBui7L9Xt
+e6AF39QM3/AbBgjKGYnoq9aCxXsxd5nHR0iPDA/nHtTCd8umkxpuf4T60ubJ
+klgt2DN722Qrp2HWb+VdYz5ayH4am1J1ZxqqyxNS7Tla2Lsz98jnq2bAyupg
+wokhDQTpvUcv35sBLzG3UN6hAZ7DMnElGiGK+lhG1migelK7xqfDCAtrT28L
+LNRAbupRebwLBd/yRqKjtmpgT6Ph5EgyBT3MYzu6/DWwt+NEauBVCqbufvHC
+204DzxPG35i9peCp28NhXpNqOLvB1cVhKRX9urcKz6vU0KxwZVzNoOJgQJPo
+okwN7lL9+RIZFQuE1DKH42qo548G8CeoeMjjafW+dDUcC2woFPrSUJZpszYx
+VA0KmaiwIpeG/bvO/dEhUENc3RVBdjMNzROrhmWEGmaSvdSzP9DQM8/7T8lb
+FfxTWCKc8KejZ3DReGuHCjbxrq+KyqMjZUeSIr9eBRTby7MYCjqOl1SrdMUq
+aH4sV31DZyBHdtidlawC3fyaVZuDGeg5apFyTqQCUUui5GgRA4EjNujcVOD4
+5GWQbzsDhacztLsJFUzfO25bxTBDcShHoRlSgidhURsjMsOKRmnlq04ltHdF
+Pi8pNsNQyVRF2A0l3BqTdLEfmqFFiHF1mlQJxu+jU4zmTOyum6jWZiohhvY1
+o2kdE69buvgzIpXA6MS4FikTm+OVD98vV4KNzVC03yMmrnGzB76dEnJbkq1o
+1ixM1L/nO+tJeCVgPyjdzELzFM3+/icktNhnu0vLWXj22BKtTk5CX1KjqLeb
+hVZizuNLF0hIW66wqJ3Hxpgpp/vnjpBg7Hyn8ohh4/DZU+PhO008+Vgko5KN
+koFK6Yv1JCz3UeRv6mFjL64bOONFwqLGiY0GZwIXS3RVUXNJGEv88K3TNj2s
+3n7rJRGmg2t7epJqZtjY5dh5MtOZhJy2tLGyID1YG+/1rNysg0xV2LhhmI28
+tZWWdAEJr6139oTPIVBcu2VX/zwSAiT82l+89SDyrfPpjtNBBJ31k+sgGxfS
+FWW/u5PwIGThxTwWgb1ubeV1DiQwB2/auM4j0DYra8H8z0hwXEOj9Qn0sIXy
+0s8tQQchFQP2rb1sHItvcmhYSsKdnhk6h05gGbUst5RHwmReac4dLoHBfq1L
+ZmxJsAlVyU44EBibfyBEyCXBsiHz5ghfD9zymA0bvtJBwKtND4uesXFxQaf+
+B08SGt0ymnooBEbU5x8ocCJh9NcpQdFcApum+u6/szPtnwnaHj+fwP3TG+sF
+NiQsoOygtvMIjF5BG/rS2nT/G7eiv130cMVQ3Ntv4gtnE/z0p2ysaHuWzjP5
+fStskeVdIxtL5TnFkyb+8MiPhWkcAv1f7zmTYvJrlvxDK9oT6HtjxbZLJr6d
+64K4q44EdhecLm8z8Z2eXK/rcyJw7fGfQx6Z8vr0zyj/16c8P+l/AQzaPfk=
+
+                "], {{{}, {
+                   EdgeForm[], 
+                   Directive[
+                    Opacity[0.1], 
+                    RGBColor[0, 0, 1]], 
+                   GraphicsGroupBox[{
+                    
+                    PolygonBox[{{1, 78, 79, 50, 77, 70, 76, 64, 69, 75, 59, 
+                    63, 68, 74, 55, 58, 62, 67, 73, 52, 54, 57, 61, 66, 72, 
+                    49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 
+                    35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 
+                    21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 
+                    6, 5, 4, 3, 2, 51, 53, 56, 60, 65, 
+                    71}}]}]}, {}, {}}}], {}, {}}, {{{{}, {}, 
+                 TagBox[{
+                   Directive[
+                    Opacity[1.], 
+                    RGBColor[0.24720000000000014`, 0.24, 0.6], 
+                    AbsoluteThickness[1]], 
+                   LineBox[CompressedData["
+1:eJwV0Xk41Akcx/ExDOZXabQomwZFW2TFdi3y/W6rdtpxVKNjXYXSVorWozxL
+tggZR86Mq1bikRBJpcKQpmM7fvOb6yeettrKVTrUyKxhZ//4PO/n9ffHNixq
+0y4mg8Hw0e3/XpjdHVV4Wg2/++9YtI9Lw+VK34rRP9UgK37z6+V5NLQ791Ab
+K9VwNPN5g9aKBvKnkeUmNWroVxjwc+bS8OnwnInUJjXUHVnS3TKHBg868kRc
+txpW8/ta9b6i4aHIvCJwSA2CqDNN5UY0vLPcTdmuGAPXgO57r96rQJNTlrn/
+yRgkBFusftuhAkf65nRlzBeYcLk2mJWngunSKScPYhyq+YrCiAgVtHgqqkPr
+x2GrU/qVpytUkJxQ+KpyrQbGL23Q9BAqsHQeiK8a0kB+poh1vFcJ2/ODm89l
+/gtWNjm1e+qV8NedtkbxggmoKnwacjNJCZPRjayyOxPgr/16CemvhK1DWTYF
+O7TQNhjdtNZBCaHm2X3pai24DORbP2MowbXF5r1n8SQIG4vn+8gVsNj+9D2O
+yxSceixxMLqggH52g6ZCMQVFcbxFZxMV4LghOkLkzsDli01jdgkUEKv/h+tI
+KgOtsck01FEBCz5sqa2kGei6aqHSl6GAl+vsUvrt9DDAQeSzl5aDser6tIzD
+enhr1f0HKfVyYIlfhNXf1cNcmw6LjmQ5mJky5oWYMfEKkcSZFSyHtLLXSQci
+mCgUPjof+50cZuR08Wc0M3HZBW3twHQ57OtzfuUwycT5fkMvd/bLwCk8wqHG
+Tx/rb1IFeh0yYG7Ko5pL9ZHDFQyWFMvALT5tofWIPtZ03WgNPSgDvnYGnw0G
+WFXcJVv2swyi+tOpY0IDXMwfIz/Yy0A97TEroM8AhzeLe4cnKcgRscvEi1hY
+0RX+jeQJBcxEBbM6hoU+gtHY4qsU0OV7zYe7WRil8mu4lktBp/1nYTvHEJ/x
+budWH6DAZIBX9yHMED9Gmhe94VGwf1be0uaLhhhQxP00Zk/pfoxMGdUYYmJ1
+edmoPgU/CDip+d5GePe6pHPz31J4F3d+sFNkhCMjpm6RbVLQ65k27jdshAZJ
+PROfRFIYzp2igzyM8dw6ORkdK4WBSwNzv6QZY6Pe3s8n/aWw3qSUGO0xRklc
+/lFnFym0SdcEJSxkoyZ595k9HCmwR+ITjx9ko2RbsyDlPQmtXoneb7rYGHLK
+8/W3j0iI1z905IUJgTw3iWV4AwneHiV1yzkElrq/rVHUk8CNbe89YUpgR8ot
+D57O4teGbs5mBBZuPvKbUx0JhveL1PGWBJ7OsLX4cp6EnJzWKHM7Av1OsT2z
+q0iomqcN5X1P4IOCNTPby0g4tMU2t9SNwBIZa5mLzryTa8Uj7gTWRsQEnysl
+YYiRzS30JHDbsHe7sISEpS+5vc9/JPDs3M9Xt4pIuF6L/vG+BD45Nib8mE9C
+xj87kx/5EdiZ4KPZpXOQVfol240Elgn4B3rySJjKknLuCgj0Glu9U5xLgtfB
+sIdmvxAYdluTln2SBIva1IndAQTSvhlWTJ37X9Q63ggkUBTX1RKbTYLQfzQ9
+NITAlTPt1EFZJARmzW69vJ1AdyffcjKThCUS9wGjUAIpH+56L50nJ7fPDgwj
+MH99wfjVDBIerzy+riGcQLPxiw2OOv8H1LZT7w==
+                    "]]}, 
+                  Annotation[#, 
+                   "Charting`Private`Tag$1954901#1"]& ]}}, {}, {}}}, {
+             GridLines -> Dynamic[
+                Map[{{#, 
+                   GrayLevel[0.7]}}& , 
+                 MousePosition[{"Graphics", Graphics}, None]]], 
+              AxesOrigin -> {Automatic, 0}, PlotRange -> All, ImageSize -> 
+              200, DisplayFunction -> Identity, 
+              Ticks -> {Automatic, Automatic}, 
+              AxesOrigin -> {1.413716694115407, 0.}, 
+              FrameTicks -> {{Automatic, {{0., 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.1, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.2, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.3, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.02, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.04, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.06, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.08, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.12, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.14, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.16, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.18, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.22, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.24, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.26, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.28, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.32, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.34, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.36, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.38, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {0.4, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}}}, {Automatic, {{1.5, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2., 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.5, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3., 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.01, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1., 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.1, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.2, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.3, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.4, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.6, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.7, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.8, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {1.9, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.1, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.2, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.3, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.4, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.6, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.7, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.8, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {2.9, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3.1, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3.2, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3.3, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3.4, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}, {3.5, 
+                   FormBox[
+                    InterpretationBox[
+                    StyleBox[
+                    
+                    GraphicsBox[{}, ImageSize -> {0, 0}, BaselinePosition -> 
+                    Baseline], "CacheGraphics" -> False], 
+                    Spacer[{0, 0}], Selectable -> False], TraditionalForm], {
+                   0.005, 0.}, {
+                    AbsoluteThickness[0.1]}}}}}, GridLines -> {None, None}, 
+              DisplayFunction -> Identity, 
+              PlotRangePadding -> {{0, 0}, {0, 0}}, PlotRangeClipping -> True,
+               ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {True, True}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {1.413716694115407, 0.}, AxesStyle -> Directive[
+                AbsoluteThickness[0.2]], BaseStyle -> Automatic, 
+              DisplayFunction :> Identity, Epilog -> {
+                LineBox[
+                 
+                 NCache[{{Rational[1, 2] Pi, 0}, {
+                   Rational[1, 2] Pi, Rational[1, 2] 
+                    E^(Rational[-1, 10] Pi)}}, {{1.5707963267948966`, 0}, {
+                   1.5707963267948966`, 0.3652013455243228}}]], 
+                LineBox[
+                 
+                 NCache[{{Pi, 0}, {
+                   Pi, Rational[1, 2] E^(Rational[-1, 5] Pi)}}, {{
+                   3.141592653589793, 0}, {3.141592653589793, 
+                   0.26674404554555164`}}]]}, 
+              Frame -> {{False, False}, {False, False}}, 
+              FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+              Directive[
+                AbsoluteThickness[0.2]], 
+              FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+              GridLines -> {None, None}, GridLinesStyle -> {
+                GrayLevel[0.85], 
+                GrayLevel[0.9]}, ImageSize -> 440., 
+              Method -> {
+               "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+                PointSize[Medium], "PointSizeFunction" -> "SmallPointSize", 
+                "ScalingFunctions" -> None, 
+                "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                    (Identity[#]& )[
+                    Part[#, 1]], 
+                    (Identity[#]& )[
+                    Part[#, 2]]}& )}, "AxesInFront" -> True}, 
+              PlotRange -> {{1.413716694115407, 3.2986722862692828`}, {0., 
+               0.3768566030788133}}, PlotRangeClipping -> True, 
+              PlotRangePadding -> {{Automatic, Automatic}, {
+                Automatic, Automatic}}, Prolog -> {
+                Opacity[0], 
+                TagBox[
+                 RectangleBox[
+                  Scaled[{0, 0}], 
+                  Scaled[{1, 1}]], Annotation[#, "Plot", "Frame"]& ]}, 
+              Ticks -> {Automatic, Automatic}}], TraditionalForm]], 
+          "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {"minput,computabledata,formatteddata"}]}]}], 
+   Typeset`pod3$$ = XMLElement[
+   "pod", {"title" -> "Riemann sums", "scanner" -> "Integral", "id" -> 
+     "RiemannSums", "position" -> "300", "error" -> "false", "numsubpods" -> 
+     "2"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             GridBox[{{
+                StyleBox[
+                 TagBox[
+                  GridBox[{{
+                    TagBox[
+                    PaneBox[
+                    StyleBox[
+                    "\"left sum\"", {
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False], 
+                    BaseStyle -> {{
+                    BaselinePosition -> Baseline, FontColor -> 
+                    GrayLevel[0.3]}, LineSpacing -> {0.9, 0, 1.5}, 
+                    LinebreakAdjustments -> {1, 10, 10000, 0, 100}, 
+                    TextAlignment -> Left}, BaselinePosition -> Baseline], 
+                    $CellContext`TagBoxWrapper["Label"]], 
+                    RowBox[{
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Pi]", "/", "5"}]}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]], "-", 
+                    RowBox[{"1"}]}], ")"}], " ", "\[Pi]"}], 
+                    RowBox[{"4", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"n", "-", 
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Pi]", "/", 
+                    RowBox[{"(", 
+                    RowBox[{"10", " ", "n"}], ")"}]}]}]], " ", "n"}]}], 
+                    ")"}]}]], "\[LongEqual]", 
+                    TagBox[
+                    TemplateBox[{
+                    RowBox[{
+                    RowBox[{
+                    FractionBox["5", "2"], " ", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Pi]", "/", "5"}]}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]], "-", 
+                    RowBox[{"1"}]}], ")"}]}], "+", 
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Pi]", "/", "5"}]}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]], "-", 
+                    RowBox[{"1"}]}], ")"}], " ", "\[Pi]"}], 
+                    RowBox[{"8", " ", "n"}]], "+", 
+                    InterpretationBox[
+                    RowBox[{"O", "(", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    FractionBox["1", "n"], ")"}], "2"], ")"}], 
+                    SeriesData[$CellContext`n, 
+                    DirectedInfinity[1], {}, 0, 2, 1], Editable -> False]}], 
+                    RowBox[{"SeriesData", "[", 
+                    RowBox[{"n", ",", "\[Infinity]", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    FractionBox["5", "2"], " ", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{
+                    RowBox[{"-", "\[Pi]"}], "/", "5"}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]]}], ")"}]}], ",", 
+                    RowBox[{
+                    FractionBox["1", "8"], " ", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{
+                    RowBox[{"-", "\[Pi]"}], "/", "5"}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"\[Pi]", "/", "10"}]]}], ")"}], " ", "\[Pi]"}]}], 
+                    "}"}], ",", "0", ",", "2", ",", "1"}], "]"}]}, 
+                    "SeriesData", DisplayFunction -> (#& ), 
+                    InterpretationFunction -> (#2& ), SyntaxForm -> Plus], 
+                    Identity]}]}}, 
+                   GridBoxAlignment -> {
+                    "Columns" -> {Left, Left}, "Rows" -> {{Baseline}}}, 
+                   AutoDelete -> False, 
+                   GridBoxBackground -> {"Columns" -> {None, None}}, 
+                   GridBoxFrame -> {
+                    "Columns" -> {{True}}, "Rows" -> {{True}}}, 
+                   GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                   GridBoxSpacings -> {
+                    "Columns" -> {{1.5}, 2}, "Rows" -> {{1}}}, FrameStyle -> 
+                   GrayLevel[0.84], BaselinePosition -> Automatic, 
+                   AllowScriptLevelChange -> False], "Grid"], 
+                 LineSpacing -> {0.9, 0, 1.5}, LineIndent -> 0, StripOnInput -> 
+                 False]}, {
+                StyleBox[
+                 
+                 RowBox[{
+                  "\"(\"", "\[NoBreak]", 
+                   "\"assuming subintervals of equal length\"", "\[NoBreak]", 
+                   "\")\""}], {FontFamily -> "Verdana", FontSize -> 10, 
+                  GrayLevel[0.5], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                   LineIndent -> 0}, StripOnInput -> False]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+              "Column", 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+             "Column"], TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,computabledata,formatteddata,formuladata"}]}], 
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement["cell", {"compressed" -> True, "string" -> False}, {
+         Cell[
+          BoxData[
+           FormBox[
+            TagBox[
+             FormBox[
+              StyleBox[
+               
+               DynamicModuleBox[{
+                CalculateScan`RiemannSumScanner`Private`intervals$$ = 10, 
+                 CalculateScan`RiemannSumScanner`Private`method$$ = 
+                 CalculateScan`RiemannSumScanner`Private`LeftValue, 
+                 CalculateUtilities`GraphicsUtilities`Private`more$$ = False, 
+                 Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+                 Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+                 Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+                 Typeset`specs$$ = {{
+                    Hold[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$], {
+                    False, True}}, {{
+                    Hold[CalculateScan`RiemannSumScanner`Private`intervals$$],
+                     10, "number of subintervals"}, 2, 100, 1}, {{
+                    Hold[CalculateScan`RiemannSumScanner`Private`method$$], 
+                    CalculateScan`RiemannSumScanner`Private`LeftValue, 
+                    "summation method"}, {
+                    CalculateScan`RiemannSumScanner`Private`LeftValue -> 
+                    "left endpoint", 
+                    CalculateScan`RiemannSumScanner`Private`MidpointValue -> 
+                    "midpoint", 
+                    CalculateScan`RiemannSumScanner`Private`RightValue -> 
+                    "right endpoint"}}, {
+                    Hold[
+                    Style[
+                    Overlay[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "WABitmaps", "PodInfoBackground"]]], 
+                    Pane[
+                    Column[{
+                    Manipulate`Place[1], 
+                    Manipulate`Place[2]}], 
+                    ImageMargins -> {{20, 30}, {10, 10}}]}, {1, 2}, 2, 
+                    Alignment -> {Left, Top}]]], 
+                    Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = 
+                 Automatic, Typeset`update$$ = 0, Typeset`initDone$$ = False, 
+                 Typeset`skipInitDone$$ = False, 
+                 CalculateUtilities`GraphicsUtilities`Private`more$1884260$$ = 
+                 False, CalculateScan`RiemannSumScanner`Private`intervals$\
+1884265$$ = 0, CalculateScan`RiemannSumScanner`Private`method$1884266$$ = 
+                 False}, 
+                DynamicBox[
+                 Manipulate`ManipulateBoxes[
+                 2, TraditionalForm, 
+                  "Variables" :> {
+                   CalculateScan`RiemannSumScanner`Private`intervals$$ = 10, 
+                    CalculateScan`RiemannSumScanner`Private`method$$ = 
+                    CalculateScan`RiemannSumScanner`Private`LeftValue, 
+                    CalculateUtilities`GraphicsUtilities`Private`more$$ = 
+                    False}, "ControllerVariables" :> {
+                    Hold[
+                    CalculateUtilities`GraphicsUtilities`Private`more$$, 
+                    CalculateUtilities`GraphicsUtilities`Private`more$1884260$\
+$, False], 
+                    Hold[
+                    CalculateScan`RiemannSumScanner`Private`intervals$$, 
+                    CalculateScan`RiemannSumScanner`Private`intervals$1884265$\
+$, 0], 
+                    Hold[
+                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`method$1884266$$, 
+                    False]}, 
+                  "OtherVariables" :> {
+                   Typeset`show$$, Typeset`bookmarkList$$, 
+                    Typeset`bookmarkMode$$, Typeset`animator$$, 
+                    Typeset`animvar$$, Typeset`name$$, Typeset`specs$$, 
+                    Typeset`size$$, Typeset`update$$, Typeset`initDone$$, 
+                    Typeset`skipInitDone$$}, "Body" :> Quiet[
+                    
+                    With[{CalculateScan`RiemannSumScanner`Private`delta$ = (
+                    Pi - Rational[1, 2] Pi)/
+                    CalculateScan`RiemannSumScanner`Private`intervals$$, 
+                    CalculateScan`RiemannSumScanner`Private`epsilon$ = 
+                    RandomReal[{0, 0.001}]}, 
+                    Labeled[
+                    Plot[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), {$CellContext`\[Theta], 
+                    1.413716694115407, 3.2986722862692828`}, 
+                    PlotRange -> {{1.413716694115407, 
+                    3.2986722862692828`}, {-0.036520134552432276`, 
+                    0.4017214800767551}}, Prolog -> Table[
+                    (Flatten[{
+                    If[
+                    TrueQ[Part[#, 2, 2] > 0], {
+                    Opacity[0.1], Blue, 
+                    EdgeForm[
+                    RGBColor[{0.63, 0.64, 0.84}]]}, {
+                    Opacity[0.1], Red, 
+                    EdgeForm[
+                    RGBColor[{0.9, 0.64, 0.64}]]}], 
+                    Polygon[#]}]& )[
+                    ({{#, 0}, {#, #3}, {#2, #3}, {#2, 0}}& )[
+                    Rational[1, 2] Pi + 
+                    CalculateScan`RiemannSumScanner`Private`i 
+                    CalculateScan`RiemannSumScanner`Private`delta$, 
+                    Rational[1, 2] 
+                    Pi + (CalculateScan`RiemannSumScanner`Private`i + 1) 
+                    CalculateScan`RiemannSumScanner`Private`delta$, 
+                    (If[
+                    Or[
+                    Not[
+                    NumericQ[#]], 
+                    Not[
+                    FreeQ[#, 
+                    Alternatives[Complex, I]]]], 0, #]& )[
+                    Quiet[
+                    Which[
+                    MatchQ[
+                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`LeftValue], 
+                    (If[
+                    Not[
+                    NumericQ[#]], 
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] Pi + 
+                    CalculateScan`RiemannSumScanner`Private`i 
+                    CalculateScan`RiemannSumScanner`Private`delta$ + 
+                    CalculateScan`RiemannSumScanner`Private`epsilon$]], #]& )[
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] Pi + 
+                    CalculateScan`RiemannSumScanner`Private`i 
+                    CalculateScan`RiemannSumScanner`Private`delta$]]], 
+                    MatchQ[
+                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`MidpointValue], 
+                    (If[
+                    Not[
+                    NumericQ[#]], 
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] Pi + (
+                    CalculateScan`RiemannSumScanner`Private`i 
+                    CalculateScan`RiemannSumScanner`Private`delta$ + (
+                    CalculateScan`RiemannSumScanner`Private`i + 1) 
+                    CalculateScan`RiemannSumScanner`Private`delta$)/2 + 
+                    CalculateScan`RiemannSumScanner`Private`epsilon$]], #]& )[
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] 
+                    Pi + (CalculateScan`RiemannSumScanner`Private`i 
+                    CalculateScan`RiemannSumScanner`Private`delta$ + (
+                    CalculateScan`RiemannSumScanner`Private`i + 1) 
+                    CalculateScan`RiemannSumScanner`Private`delta$)/2]]], 
+                    MatchQ[
+                    CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`RightValue], 
+                    (If[
+                    Not[
+                    NumericQ[#]], 
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] 
+                    Pi + (CalculateScan`RiemannSumScanner`Private`i + 1) 
+                    CalculateScan`RiemannSumScanner`Private`delta$ - 
+                    CalculateScan`RiemannSumScanner`Private`epsilon$]], #]& )[
+                    N[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), $CellContext`\[Theta] -> 
+                    Rational[1, 2] 
+                    Pi + (CalculateScan`RiemannSumScanner`Private`i + 1) 
+                    CalculateScan`RiemannSumScanner`Private`delta$]]], True, 
+                    0]]]]], {
+                    CalculateScan`RiemannSumScanner`Private`i, 0, 
+                    CalculateScan`RiemannSumScanner`Private`intervals$$ - 1}],
+                     PlotStyle -> AbsoluteThickness[1], ImageSize -> 1.5 200], 
+                    (If[
+                    NumericQ[#], 
+                    Grid[{{
+                    Row[{
+                    Style["integral: ", 
+                    GrayLevel[0.6]], 
+                    TildeTilde[
+                    Rational[5, 2] 
+                    E^(Rational[-1, 5] Pi) (-1 + E^(Rational[1, 10] Pi)), 
+                    0.492286499893856]}]}, {
+                    Row[{
+                    Style["Riemann sum: ", 
+                    GrayLevel[0.6]], #}]}, {
+                    Row[{
+                    Style["error: ", 
+                    GrayLevel[0.6]], 
+                    
+                    Abs[# - Rational[5, 2] 
+                    E^(Rational[-1, 5] Pi) (-1 + E^(Rational[1, 10] Pi))]}]}},
+                     Alignment -> ":"], ""]& )[
+                    (Chop[
+                    N[
+                    TimeConstrained[
+                    Simplify[#], 0.5, #]]]& )[
+                    Quiet[CalculateScan`RiemannSumScanner`Private`delta$ Sum[
+                    ReplaceAll[
+                    Rational[1, 2] 
+                    E^(Rational[-1, 
+                    5] $CellContext`\[Theta]), {$CellContext`\[Theta] -> 
+                    Rational[1, 2] Pi + 
+                    CalculateScan`RiemannSumScanner`Private`k 
+                    CalculateScan`RiemannSumScanner`Private`delta$ + 
+                    CalculateScan`RiemannSumScanner`Private`delta$ 
+                    ReplaceAll[
+                    CalculateScan`RiemannSumScanner`Private`method$$, {
+                    CalculateScan`RiemannSumScanner`Private`LeftValue -> 0, 
+                    CalculateScan`RiemannSumScanner`Private`MidpointValue -> 
+                    Rational[1, 2], 
+                    CalculateScan`RiemannSumScanner`Private`RightValue -> 
+                    1}]}], {
+                    CalculateScan`RiemannSumScanner`Private`k, 0, 
+                    CalculateScan`RiemannSumScanner`Private`intervals$$ - 
+                    1}]]]]]]], 
+                  "Specifications" :> {{
+                    CalculateUtilities`GraphicsUtilities`Private`more$$, {
+                    False, True}, ControlType -> None}, {{
+                    CalculateScan`RiemannSumScanner`Private`intervals$$, 10, 
+                    "number of subintervals"}, 2, 100, 1, ControlPlacement -> 
+                    1}, {{CalculateScan`RiemannSumScanner`Private`method$$, 
+                    CalculateScan`RiemannSumScanner`Private`LeftValue, 
+                    "summation method"}, {
+                    CalculateScan`RiemannSumScanner`Private`LeftValue -> 
+                    "left endpoint", 
+                    CalculateScan`RiemannSumScanner`Private`MidpointValue -> 
+                    "midpoint", 
+                    CalculateScan`RiemannSumScanner`Private`RightValue -> 
+                    "right endpoint"}, ControlPlacement -> 2}, 
+                    Style[
+                    Overlay[{
+                    Dynamic[
+                    RawBoxes[
+                    FEPrivate`FrontEndResource[
+                    "WABitmaps", "PodInfoBackground"]]], 
+                    Pane[
+                    Column[{
+                    Manipulate`Place[1], 
+                    Manipulate`Place[2]}], 
+                    ImageMargins -> {{20, 30}, {10, 10}}]}, {1, 2}, 2, 
+                    Alignment -> {Left, Top}]]}, 
+                  "Options" :> {
+                   ControlPlacement -> Bottom, 
+                    FrameMargins -> {{0, 0}, {0, 10}}, Paneled -> False, 
+                    AppearanceElements -> {}, 
+                    LabelStyle -> {
+                    "DialogStyle", FontColor -> GrayLevel[0.25]}}, 
+                  "DefaultOptions" :> {}], SingleEvaluation -> True], 
+                Initialization :> ({None, 
+                   ReleaseHold[
+                    Uncompress[
+                    "6:eJztVm1v0zAQbikw3t/+\
+ARKfkbaB1C9IsI6NSQNKUr73ljiJhWsH29kGfx58dpM0a1cppgM0pR9O9aV5fPfcc9d7fiKCpN/\
+r9dRNYz4IFidbeHpmzEjMclHw+P15LolSVPDkBj67Z0xI9D5h8IPEznfbmAMhZ6Dd+Q2+\
+DywqGGjyVVNGNSVqeighz2ikas9Y0lPzkykTETD6k7zYHg53d14PHQzGMgatieRqty1knklQJOkh0C\
+1j9hjwb+74tDx+KhgLyfeC8Iiox8Y7kRAbGMGBYT7et15vph5gYhp4DDK+\
+cpqsPEdtL1BaUp5OyCzHNy4na7stMMhUOW4eltysU5AL/w4+EKGNyXls0vZsCfQL45rRd1FW/\
+5y7AZ7ftoWX4mw1cZjfO4a8gaanRC3T+bJ1nRwjVdfa6OdcXdV82WiQl0+Z+n/\
+pmCq9HMZO2zDI7MTUeLX2luFftYUXOXb9XNyPjPnsHCXgquFQCe6jiAs2j6KZ8sBJtH26KjcOh3G/\
+4jtEp08FK5zAxFn2i+\
+2PJxV4vSmEWLvpBqTD6xkQkJwYV2y53acp1aMMJEQGeH5dv2yyiahD8bizfe0pj6kZYI6QdcsTmqNk\
+oe6go+zLHxW3ksuFJkPej7gmKZFrRX8X6yMNuTyeCM9IQrygqVdvDqukxiC9ZT8oQcIcOEVI+\
+st87Df3cLESSNWhRHVJx+LAlubcP4l+\
+WeBjwlOdNXdsz9Hl3baYTSDOatUFNEkWp83mmO43mW7c0BzoviT4lsR/oHebQrcp/\
+NVNYWkP7taEbk3o1oRuTejWhP93TbAR47/Sb7OSuLY="]]}; Typeset`initDone$$ = True), 
+                DynamicModuleValues :> {}, Deinitialization :> None, 
+                UntrackedVariables :> {Typeset`size$$}, 
+                SynchronousInitialization -> True, 
+                UnsavedVariables :> {Typeset`initDone$$}, 
+                UndoTrackedVariables :> {
+                 Typeset`show$$, Typeset`bookmarkMode$$}], "Manipulate", 
+               Deployed -> True, StripOnInput -> False], TraditionalForm], 
+             Manipulate`InterpretManipulate[1]], TraditionalForm]], 
+          "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement["dataformats", {}, {}]}], 
+     XMLElement["states", {"count" -> "1"}, {
+       XMLElement[
+       "state", {
+        "name" -> "More cases", "input" -> 
+         "RiemannSums__More cases"}, {}]}]}], Typeset`pod4$$ = XMLElement[
+   "pod", {"title" -> "Indefinite integral", "scanner" -> "Integral", "id" -> 
+     "IndefiniteIntegral", "position" -> "400", "error" -> "false", 
+     "numsubpods" -> "1"}, {
+     XMLElement["subpod", {"title" -> ""}, {
+       XMLElement[
+       "minput", {}, {"Integrate[1/(2 E^(\[Theta]/5)), \[Theta]]"}], 
+       XMLElement["moutput", {}, {"-5/(2 E^(\[Theta]/5))"}], 
+       XMLElement["cell", {"compressed" -> False, "string" -> True}, {
+         Cell[
+          BoxData[
+           FormBox[
+            RowBox[{
+              TagBox[
+               RowBox[{"\[Integral]", 
+                 RowBox[{
+                   TagBox[
+                    RowBox[{
+                    FractionBox["1", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Theta]", "/", "10"}]}]], ")"}], "2"]}], 
+                    HoldForm], 
+                   RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}], HoldForm], 
+              "\[LongEqual]", 
+              TagBox[
+               StyleBox[
+                RowBox[{
+                  StyleBox[
+                   RowBox[{
+                    RowBox[{"-", 
+                    FractionBox["5", "2"]}], " ", 
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"-", 
+                    RowBox[{"\[Theta]", "/", "5"}]}]]}], {
+                    GrayLevel[0], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                     LineIndent -> 0}, StripOnInput -> False], "+", 
+                  StyleBox[
+                  "\"constant\"", {
+                   Magnification -> 0.9 Inherited, FontFamily -> "Helvetica", 
+                    FontSize -> Inherited, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}, StripOnInput -> False]}], {
+                 GrayLevel[0.6], LinebreakAdjustments -> {1, 100, 1, 0, 100}, 
+                 LineIndent -> 0}, StripOnInput -> False], Identity]}], 
+            TraditionalForm]], "Output", {
+          Background -> None, 
+           GraphicsBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics"}, 
+             DefaultAxesStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsAxes"], DefaultFrameStyle -> Directive[
+               GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 
+               1, "GraphicsFrame"], DefaultFrameTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"], 
+             DefaultTicksStyle -> 
+             Directive[
+              FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]}, 
+           Graphics3DBoxOptions -> {
+            DefaultBaseStyle -> {FontFamily -> "Times", "Graphics3D"}}}, 
+          NumberPoint -> ".", CellSize -> {550, Automatic}, 
+          AutoStyleOptions -> {"HighlightFormattingErrors" -> False}, 
+          RenderingOptions -> {
+           "3DRenderingMethod" -> "BSPTreeOrDepthBuffer"}]}], 
+       XMLElement[
+       "dataformats", {}, {
+        "plaintext,minput,moutput,computabledata,formatteddata,formuladata"}]}\
+], 
+     XMLElement["states", {"count" -> "2"}, {
+       XMLElement[
+       "state", {
+        "name" -> "Approximate form", "input" -> 
+         "IndefiniteIntegral__Approximate form"}, {}], 
+       XMLElement[
+       "state", {
+        "name" -> "Step-by-step solution", "input" -> 
+         "IndefiniteIntegral__Step-by-step solution", "stepbystep" -> 
+         "true"}, {}]}]}], Typeset`aux1$$ = {
+   True, False, {False, False}, True}, Typeset`aux2$$ = {
+   True, False, {False}, True}, Typeset`aux3$$ = {
+   True, False, {False, False}, True}, Typeset`aux4$$ = {
+   True, False, {False}, True}, Typeset`asyncpods$$ = {}, 
+   Typeset`nonpods$$ = {}, Typeset`initdone$$ = True, Typeset`queryinfo$$ = {
+   "success" -> "true", "error" -> "false", "numpods" -> "4", "datatypes" -> 
+    "", "timedout" -> "", "timedoutpods" -> "", "timing" -> "1.98", 
+    "parsetiming" -> "1.1300000000000001", "parsetimedout" -> "false", 
+    "recalculate" -> "", "id" -> 
+    "MSPa2512235h8310i7000bci00003difa5588i1291g6", "host" -> 
+    "http://www5a.wolframalpha.com", "server" -> "54", "related" -> 
+    "http://www5a.wolframalpha.com/api/v2/relatedQueries.jsp?id=\
+MSPa2513235h8310i7000bci000047d5fbghafi934h55802790122383609046", "version" -> 
+    "2.6"}, Typeset`sessioninfo$$ = {
+   "TimeZone" -> -4., 
+    "Date" -> {2019, 4, 2, 1, 34, 11.0057878`8.794196094183462}, "Line" -> 5, 
+    "SessionID" -> 30686581334521816945}, Typeset`showpods$$ = {1, 2, 3, 4}, 
+   Typeset`failedpods$$ = {}, Typeset`chosen$$ = {
+   "Fast parse", "Fast parse", 1, 0, "Input", 
+    "Integrate[(1/2)*(E^(-(\[Theta]/10)))^2, {\[Theta], Pi/2, Pi}]"}, 
+   Typeset`open$$ = False, Typeset`newq$$ = 
+   "integrate (1/2) * (e^(- \[Theta]/10))^2 from \[Pi]/2 to \[Pi]"}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`FormatAlphaResults[
+      Dynamic[{
+       1, {Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$}, {
+        Typeset`aux1$$, Typeset`aux2$$, Typeset`aux3$$, Typeset`aux4$$}, 
+        Typeset`chosen$$, Typeset`open$$, Typeset`elements$$, Typeset`q$$, 
+        Typeset`opts$$, Typeset`nonpods$$, Typeset`queryinfo$$, 
+        Typeset`sessioninfo$$, Typeset`showpods$$, Typeset`failedpods$$, 
+        Typeset`newq$$}]], StandardForm],
+    ImageSizeCache->{700., {59., 36.}},
+    TrackedSymbols:>{Typeset`showpods$$, Typeset`failedpods$$}],
+   DynamicModuleValues:>{},
+   Initialization:>If[
+     Not[Typeset`initdone$$], Null; WolframAlphaClient`Private`doAsyncUpdates[
+       Hold[{Typeset`pod1$$, Typeset`pod2$$, Typeset`pod3$$, Typeset`pod4$$}],
+        Typeset`asyncpods$$, 
+       Dynamic[Typeset`failedpods$$]]; Typeset`asyncpods$$ = {}; 
+     Typeset`initdone$$ = True],
+   SynchronousInitialization->False],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "WolframAlphaShortInput",ExpressionUUID->\
+"b4799274-0a68-4950-ae7e-cc8cb5d8ceab"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["5", "2"], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "\[Pi]"}], "/", "5"}]], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[Pi]", "/", "10"}]]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.7631720306831746`*^9},ExpressionUUID->"44055914-966a-4f84-881c-\
+29cbbb21dc14"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem #2", "Subchapter",
+ CellChangeTimes->{{3.763172191328054*^9, 
+  3.763172195920903*^9}},ExpressionUUID->"f17c1d92-90ba-4679-b8c9-\
+d60fc248bccf"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Sketch", " ", "the", " ", "Curve"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.7631722205583687`*^9, 
+  3.763172231135895*^9}},ExpressionUUID->"9c466f95-b6b9-4513-a09f-\
+c58611dfe926"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", 
+  RowBox[{"r", ",", "\[Theta]", ",", "x", ",", "y", ",", "z"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.76317223821389*^9, 
+  3.7631722570333405`*^9}},ExpressionUUID->"162566f6-bcc9-4fe0-9cec-\
+e0e9fd4100f0"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"r", "=", " ", 
+   RowBox[{"3", " ", "+", " ", 
+    RowBox[{"2", " ", "*", " ", 
+     RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", 
+    SubscriptBox["\[Theta]", "1"], 
+    SubscriptBox["\[Theta]", "2"]], 
+   RowBox[{
+    FractionBox["1", "2"], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"3", " ", "+", " ", 
+       RowBox[{"2", " ", "*", " ", 
+        RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "2"], 
+    RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}], "=", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    SuperscriptBox["a", "2"], "+", 
+    SuperscriptBox["b", "2"], "+", 
+    RowBox[{"2", "ab"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "2"], 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", 
+      SubscriptBox["\[Theta]", "1"], 
+      SubscriptBox["\[Theta]", "2"]], 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"3", " ", "+", " ", 
+         RowBox[{"2", " ", "*", " ", 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "2"], 
+      RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "2"], 
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", 
+       SubscriptBox["\[Theta]", "1"], 
+       SubscriptBox["\[Theta]", "2"]], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"4", "*", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Cos", "[", "\[Theta]", "]"}], ")"}], "2"]}], "+", 
+         RowBox[{"12", " ", 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], 
+       RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["cos", "2"], 
+       RowBox[{"(", "x", ")"}]}], " ", "=", " ", 
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"cos", 
+          RowBox[{"(", 
+           RowBox[{"2", "x"}], ")"}]}]}], ")"}]}]}], " ", "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "2"], 
+      RowBox[{
+       SubsuperscriptBox["\[Integral]", 
+        SubscriptBox["\[Theta]", "1"], 
+        SubscriptBox["\[Theta]", "2"]], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"4", "*", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"Cos", "[", "\[Theta]", "]"}], ")"}], "2"]}], "+", 
+          RowBox[{"12", " ", 
+           RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], 
+        RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", " ", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       FractionBox["1", "2"], 
+       RowBox[{
+        SubsuperscriptBox["\[Integral]", 
+         SubscriptBox["\[Theta]", "1"], 
+         SubscriptBox["\[Theta]", "2"]], 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "-", 
+             RowBox[{"2", 
+              RowBox[{"Cos", "[", 
+               RowBox[{"2", "\[Theta]"}], "]"}]}]}], ")"}], "+", 
+           RowBox[{"12", " ", 
+            RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], 
+         RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{"u", " ", "=", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"2", " ", "\[Theta]"}], " ", "\[Rule]", " ", 
+         RowBox[{
+          FractionBox["1", "2"], "du"}]}], "=", " ", 
+        RowBox[{
+        "\[DifferentialD]", "\[Theta]"}]}]}]}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", "x_", "]"}], "=", 
+   RowBox[{
+    FractionBox["1", "2"], "[", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", "\[Theta]"}], "-", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"2", "\[Theta]"}], "]"}]}], ")"}], "+", 
+      RowBox[{"12", " ", 
+       RowBox[{"Sin", "[", "\[Theta]", "]"}]}]}], ")"}], "]"}]}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "=", " ", "0"}], ";", " ", 
+    RowBox[{
+     SubscriptBox["x", "2"], "=", " ", 
+     RowBox[{"2", "\[Pi]"}]}]}], "}"}], " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "[", 
+    RowBox[{"2", "\[Pi]"}], "]"}], " ", "-", " ", 
+   RowBox[{"A", "[", "0", "]"}]}], "="}]}], "Input",
+ CellChangeTimes->{{3.7631722611427774`*^9, 3.763172284261041*^9}, {
+  3.763172442931201*^9, 3.7631725215096407`*^9}, {3.7631726306315103`*^9, 
+  3.763172952679691*^9}, {3.7631729944916787`*^9, 3.7631731952444706`*^9}, {
+  3.7631732331138735`*^9, 
+  3.7631733692156982`*^9}},ExpressionUUID->"506c2a9d-7485-4ac2-b4bd-\
+5f2bb25eeed7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryParseResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "Integrate (1/2) * (3 + 2 (cos(\[Theta])))^2 from 0 to 2\[Pi]", 
+   Typeset`newq$$ = 
+   "Integrate (1/2) * (3 + 2 (cos(\[Theta])))^2 from 0 to 2\[Pi]", 
+   Typeset`chosen$$ = 
+   "Integrate[(1/2)*(3 + 2*Cos[\[Theta]])^2, {\[Theta], 0, 2*Pi}]", 
+   Typeset`open$$ = False}, 
+   PaneSelectorBox[{False->
+    DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+     WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+     TagBox[
+      FrameBox[
+       TagBox[GridBox[{
+          {
+           InputFieldBox[Dynamic[Typeset`newq$$], String,
+            Appearance->None,
+            BaseStyle->{"CalculateInput"},
+            ContinuousAction->True,
+            Enabled->True,
+            FieldSize->{{1, 40}, {1, 
+               DirectedInfinity[1]}},
+            TrapSelection->False], 
+           ItemBox[
+            ButtonBox[
+             PaneSelectorBox[{True->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "OrangeSquarePlus"],
+                 ImageSizeCache->{20., {5., 17.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ], False->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "GraySquarePlus"],
+                 ImageSizeCache->{20., {5., 17.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ]}, Dynamic[WolframAlphaClient`Private`show$$],
+              ImageSize->All],
+             Appearance->None,
+             ButtonFunction:>(Quiet[
+                WolframAlpha[]]; If[
+                Or[
+                 CurrentValue["OptionKey"], 
+                 CurrentValue["AltKey"]], SelectionMove[
+                  ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                  Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                   "TextForm"], All], Typeset`open$$ = True; 
+                WolframAlphaClient`Private`extrudeFromFastParse[
+                 "Integrate (1/2) * (3 + 2 (cos(\[Theta])))^2 from 0 to \
+2\[Pi]", 
+                  Defer[
+                   
+                   Integrate[(1/2) (3 + 2 Cos[Global`\[Theta]])^2, {
+                    Global`\[Theta], 0, 2 Pi}]], "Fast parse"]; 
+                Typeset`open$$ = False]),
+             Evaluator->Automatic,
+             Method->"Queued"],
+            Alignment->{Right, Top},
+            StripOnInput->False]},
+          {
+           PaneBox[
+            TagBox[
+             TooltipBox[
+              ButtonBox[
+               PaneSelectorBox[{False->
+                StyleBox[
+                 RowBox[{"Integrate", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                   RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}],
+                 StripOnInput->False,
+                 NumberMarks->False], True->
+                StyleBox[
+                 RowBox[{"Integrate", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                   RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}],
+                 StripOnInput->False,
+                 ShowSyntaxStyles->False,
+                 NumberMarks->False,
+                 FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                 CurrentValue["MouseOver"]],
+                BaseStyle->{ShowStringCharacters -> True},
+                FrameMargins->0,
+                ImageSize->Automatic],
+               Alignment->Left,
+               Appearance->None,
+               BaseStyle->{},
+               ButtonFunction:>(SelectionMove[
+                  ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                   BoxData[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}]], "Input"], 
+                  All]; SelectionMove[
+                  ButtonNotebook[], After, CellContents]),
+               Evaluator->Automatic,
+               ImageSize->Automatic,
+               Method->"Preemptive"],
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                StandardForm]]],
+             Annotation[#, 
+              Dynamic[
+               FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+              "Tooltip"]& ],
+            AppearanceElements->{},
+            BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+            ImageSize->{Automatic, {1, 100}},
+            Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         BaselinePosition->{1, 1},
+         FrameStyle->GrayLevel[0.85],
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxDividers->{
+          "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       Alignment->Top,
+       Background->Dynamic[
+         FEPrivate`If[
+          FEPrivate`And[
+           FEPrivate`SameQ[
+            FEPrivate`Head[Typeset`newq$$], String], 
+           FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+          RGBColor[1., 0.975, 0.95], 
+          GrayLevel[1]]],
+       BaselinePosition->Baseline,
+       FrameStyle->GrayLevel[0.85],
+       ImageSize->Automatic,
+       RoundingRadius->5,
+       StripOnInput->False],
+      EventHandlerTag[{
+       "MouseEntered" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, True], "MouseExited" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+        "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+     DynamicModuleValues:>{}], True->
+    TagBox[GridBox[{
+       {
+        DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+         WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+         TagBox[
+          FrameBox[
+           TagBox[GridBox[{
+              {
+               InputFieldBox[Dynamic[Typeset`newq$$], String,
+                Appearance->None,
+                BaseStyle->{"CalculateInput"},
+                ContinuousAction->True,
+                Enabled->True,
+                FieldSize->{{1, 40}, {1, 
+                   DirectedInfinity[1]}},
+                TrapSelection->False], 
+               ItemBox[
+                ButtonBox[
+                 PaneSelectorBox[{True->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "OrangeSquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ], False->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "GraySquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ]}, Dynamic[
+                  WolframAlphaClient`Private`show$$],
+                  ImageSize->All],
+                 Appearance->None,
+                 ButtonFunction:>(Quiet[
+                    WolframAlpha[]]; If[
+                    Or[
+                    CurrentValue["OptionKey"], 
+                    CurrentValue["AltKey"]], SelectionMove[
+                    ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                    NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                    "TextForm"], All], Typeset`open$$ = True; 
+                    WolframAlphaClient`Private`extrudeFromFastParse[
+                    "Integrate (1/2) * (3 + 2 (cos(\[Theta])))^2 from 0 to 2\
+\[Pi]", 
+                    Defer[
+                    
+                    Integrate[(1/2) (3 + 2 Cos[Global`\[Theta]])^2, {
+                    Global`\[Theta], 0, 2 Pi}]], "Fast parse"]; 
+                    Typeset`open$$ = False]),
+                 Evaluator->Automatic,
+                 Method->"Queued"],
+                Alignment->{Right, Top},
+                StripOnInput->False]},
+              {
+               PaneBox[
+                TagBox[
+                 TooltipBox[
+                  ButtonBox[
+                   PaneSelectorBox[{False->
+                    StyleBox[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}],
+                    StripOnInput->False,
+                    NumberMarks->False], True->
+                    StyleBox[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}],
+                    StripOnInput->False,
+                    ShowSyntaxStyles->False,
+                    NumberMarks->False,
+                    FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    BaseStyle->{ShowStringCharacters -> True},
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                   Alignment->Left,
+                   Appearance->None,
+                   BaseStyle->{},
+                   ButtonFunction:>(SelectionMove[
+                    ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    BoxData[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"3", " ", "+", " ", 
+                    RowBox[{"2", "*", 
+                    RowBox[{"Cos", "[", "\[Theta]", "]"}]}]}], ")"}], "^", 
+                    "2"}]}], ",", " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"2", "*", "Pi"}]}], "}"}]}], "]"}]], "Input"], 
+                    All]; SelectionMove[
+                    ButtonNotebook[], After, CellContents]),
+                   Evaluator->Automatic,
+                   ImageSize->Automatic,
+                   Method->"Preemptive"],
+                  DynamicBox[
+                   ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                    StandardForm]]],
+                 Annotation[#, 
+                  Dynamic[
+                   FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+                  "Tooltip"]& ],
+                AppearanceElements->{},
+                BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+                ImageSize->{Automatic, {1, 100}},
+                Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+             },
+             AutoDelete->False,
+             BaselinePosition->{1, 1},
+             FrameStyle->GrayLevel[0.85],
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxDividers->{
+              "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Grid"],
+           Alignment->Top,
+           Background->Dynamic[
+             FEPrivate`If[
+              FEPrivate`And[
+               FEPrivate`SameQ[
+                FEPrivate`Head[Typeset`newq$$], String], 
+               FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+              RGBColor[1., 0.975, 0.95], 
+              GrayLevel[1]]],
+           BaselinePosition->Baseline,
+           FrameStyle->GrayLevel[0.85],
+           ImageSize->Automatic,
+           RoundingRadius->5,
+           StripOnInput->False],
+          
+          EventHandlerTag[{
+           "MouseEntered" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, True], 
+            "MouseExited" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+            "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+         DynamicModuleValues:>{}]},
+       {
+        InterpretationBox[
+         StyleBox[
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEExpressions", "NecklaceAnimator"][20]],
+          AnimatorBoxOptions->{ImageSize->20}],
+         Animator[Appearance -> "Necklace", ImageSize -> 20],
+         BaseStyle->{"Deploy"}]}
+      },
+      BaselinePosition->{1, 1},
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"]}, Dynamic[
+     TrueQ[Typeset`open$$]],
+    BaseStyle->{Deployed -> True},
+    ImageSize->Automatic],
+   DynamicModuleValues:>{}],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "WolframAlphaShortInput",ExpressionUUID->\
+"431072e5-8e4e-483d-9935-cc63c5211045"],
+
+Cell[BoxData[
+ RowBox[{"11", " ", "\[Pi]"}]], "Output",
+ CellChangeTimes->{
+  3.7631735001027384`*^9},ExpressionUUID->"a529a5ff-cd89-41b9-a04f-\
+36c4fd9db843"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem #3", "Subchapter",
+ CellChangeTimes->{{3.7631735514822235`*^9, 
+  3.7631735541232405`*^9}},ExpressionUUID->"a0215054-1b4a-46ae-bfc8-\
+7174db87b2b1"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "Find", " ", "the", " ", "area", " ", "of", " ", "the", " ", "region", " ", 
+   "enclosed", " ", "by", " ", "one", " ", "loop", " ", "of", " ", "the", " ",
+    "curve"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.7631735622838063`*^9, 
+  3.763173578643164*^9}},ExpressionUUID->"e28eeca0-c3d3-4791-ae93-\
+4887e7999e28"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"r", " ", "=", " ", 
+   RowBox[{"Sin", "[", 
+    RowBox[{"6", "\[Theta]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"0", " ", "\[LessEqual]", "\[Theta]", "\[LessEqual]", 
+  FractionBox["\[Pi]", "6"]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", 
+     FractionBox["\[Pi]", "6"]], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"6", "\[Theta]"}], "]"}], ")"}], "2"], 
+     RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["sin", "2"], 
+     RowBox[{"(", "\[Theta]", ")"}]}], " ", "=", " ", 
+    RowBox[{
+     FractionBox["1", "2"], 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{"cos", 
+        RowBox[{"(", 
+         RowBox[{"2", "\[Theta]"}], ")"}]}]}], ")"}]}]}], " ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   FractionBox["1", "2"], 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", 
+     FractionBox["\[Pi]", "6"]], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"6", "\[Theta]"}], "]"}], ")"}], "2"], 
+     RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", " ", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "4"], 
+    RowBox[{
+     SubsuperscriptBox["\[Integral]", "0", 
+      FractionBox["\[Pi]", "6"]], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", " ", "+", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"2", " ", "*", " ", "6", " ", "*", " ", "\[Theta]"}], 
+         "]"}]}], ")"}], 
+      RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "4"], 
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", "0", 
+       FractionBox["\[Pi]", "6"]], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", " ", "+", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"12", "\[Theta]"}], "]"}]}], ")"}], 
+       RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], " ", "=", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      FractionBox["1", "4"], "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "12"], 
+        RowBox[{"Sin", "[", 
+         RowBox[{"12", "\[Theta]"}], "]"}]}], " ", "+", " ", "\[Theta]"}], 
+      "]"}], " ", "=", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["A", "1"], "[", "x_", "]"}], "=", 
+      RowBox[{"[", 
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "48"], 
+         RowBox[{"Sin", "[", 
+          RowBox[{"12", "\[Theta]"}], "]"}]}], " ", "+", " ", 
+        FractionBox["\[Theta]", "4"]}], "]"}], " ", 
+      RowBox[{"(*", 
+       RowBox[{
+        RowBox[{"int", " ", "b"}], "-", "a"}], "*)"}]}]}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.763173588559457*^9, 3.763173605238756*^9}, {
+  3.763173693526569*^9, 3.7631737106574593`*^9}, {3.7631737737324195`*^9, 
+  3.7631742034073253`*^9}, {3.7631742389619164`*^9, 
+  3.7631742826430492`*^9}},ExpressionUUID->"b0760079-ac62-4ef0-aca8-\
+2ecb3c3a09f8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ NamespaceBox["WolframAlphaQueryParseResults",
+  DynamicModuleBox[{Typeset`q$$ = 
+   "integrate 1/2 (sin(6 \[Theta]))^2 from 0 to \[Pi]/6", Typeset`newq$$ = 
+   "integrate 1/2 (sin(6 \[Theta]))^2 from 0 to \[Pi]/6", Typeset`chosen$$ = 
+   "Integrate[(1/2)*Sin[6*\[Theta]]^2, {\[Theta], 0, Pi/6}]", Typeset`open$$ =
+    False}, 
+   PaneSelectorBox[{False->
+    DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+     WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+     TagBox[
+      FrameBox[
+       TagBox[GridBox[{
+          {
+           InputFieldBox[Dynamic[Typeset`newq$$], String,
+            Appearance->None,
+            BaseStyle->{"CalculateInput"},
+            ContinuousAction->True,
+            Enabled->True,
+            FieldSize->{{1, 40}, {1, 
+               DirectedInfinity[1]}},
+            TrapSelection->False], 
+           ItemBox[
+            ButtonBox[
+             PaneSelectorBox[{True->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "OrangeSquarePlus"],
+                 ImageSizeCache->{20., {5., 17.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ], False->
+              TagBox[
+               TooltipBox[
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "WABitmaps", "GraySquarePlus"],
+                 ImageSizeCache->{20., {5., 17.}}],
+                DynamicBox[
+                 ToBoxes[
+                  FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"], 
+                  StandardForm]]],
+               Annotation[#, 
+                Dynamic[
+                 FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"]], 
+                "Tooltip"]& ]}, Dynamic[WolframAlphaClient`Private`show$$],
+              ImageSize->All],
+             Appearance->None,
+             ButtonFunction:>(Quiet[
+                WolframAlpha[]]; If[
+                Or[
+                 CurrentValue["OptionKey"], 
+                 CurrentValue["AltKey"]], SelectionMove[
+                  ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                  Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                   "TextForm"], All], Typeset`open$$ = True; 
+                WolframAlphaClient`Private`extrudeFromFastParse[
+                 "integrate 1/2 (sin(6 \[Theta]))^2 from 0 to \[Pi]/6", 
+                  Defer[
+                   
+                   Integrate[(1/2) Sin[6 Global`\[Theta]]^2, {
+                    Global`\[Theta], 0, Pi/6}]], "Fast parse"]; 
+                Typeset`open$$ = False]),
+             Evaluator->Automatic,
+             Method->"Queued"],
+            Alignment->{Right, Top},
+            StripOnInput->False]},
+          {
+           PaneBox[
+            TagBox[
+             TooltipBox[
+              ButtonBox[
+               PaneSelectorBox[{False->
+                StyleBox[
+                 RowBox[{"Integrate", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                   " ", 
+                   RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}],
+                 StripOnInput->False,
+                 NumberMarks->False], True->
+                StyleBox[
+                 RowBox[{"Integrate", "[", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                   " ", 
+                   RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}],
+                 StripOnInput->False,
+                 ShowSyntaxStyles->False,
+                 NumberMarks->False,
+                 FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                 CurrentValue["MouseOver"]],
+                BaseStyle->{ShowStringCharacters -> True},
+                FrameMargins->0,
+                ImageSize->Automatic],
+               Alignment->Left,
+               Appearance->None,
+               BaseStyle->{},
+               ButtonFunction:>(SelectionMove[
+                  ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                  ButtonNotebook[], 
+                  Cell[
+                   BoxData[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                    " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}]], "Input"], 
+                  All]; SelectionMove[
+                  ButtonNotebook[], After, CellContents]),
+               Evaluator->Automatic,
+               ImageSize->Automatic,
+               Method->"Preemptive"],
+              DynamicBox[
+               ToBoxes[
+                FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                StandardForm]]],
+             Annotation[#, 
+              Dynamic[
+               FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+              "Tooltip"]& ],
+            AppearanceElements->{},
+            BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+            ImageSize->{Automatic, {1, 100}},
+            Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+         },
+         AutoDelete->False,
+         BaselinePosition->{1, 1},
+         FrameStyle->GrayLevel[0.85],
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxDividers->{
+          "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+        "Grid"],
+       Alignment->Top,
+       Background->Dynamic[
+         FEPrivate`If[
+          FEPrivate`And[
+           FEPrivate`SameQ[
+            FEPrivate`Head[Typeset`newq$$], String], 
+           FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+          RGBColor[1., 0.975, 0.95], 
+          GrayLevel[1]]],
+       BaselinePosition->Baseline,
+       FrameStyle->GrayLevel[0.85],
+       ImageSize->Automatic,
+       RoundingRadius->5,
+       StripOnInput->False],
+      EventHandlerTag[{
+       "MouseEntered" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, True], "MouseExited" :> 
+        FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+        "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+     DynamicModuleValues:>{}], True->
+    TagBox[GridBox[{
+       {
+        DynamicModuleBox[{WolframAlphaClient`Private`show$$ = False, 
+         WolframAlphaClient`Private`assumptionsQ$$ = False}, 
+         TagBox[
+          FrameBox[
+           TagBox[GridBox[{
+              {
+               InputFieldBox[Dynamic[Typeset`newq$$], String,
+                Appearance->None,
+                BaseStyle->{"CalculateInput"},
+                ContinuousAction->True,
+                Enabled->True,
+                FieldSize->{{1, 40}, {1, 
+                   DirectedInfinity[1]}},
+                TrapSelection->False], 
+               ItemBox[
+                ButtonBox[
+                 PaneSelectorBox[{True->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "OrangeSquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ], False->
+                  TagBox[
+                   TooltipBox[
+                    
+                    DynamicBox[FEPrivate`FrontEndResource[
+                    "WABitmaps", "GraySquarePlus"]],
+                    DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "ShowAllResults"],
+                     StandardForm]]],
+                   Annotation[#, 
+                    Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "WAStrings", "ShowAllResults"]], "Tooltip"]& ]}, Dynamic[
+                  WolframAlphaClient`Private`show$$],
+                  ImageSize->All],
+                 Appearance->None,
+                 ButtonFunction:>(Quiet[
+                    WolframAlpha[]]; If[
+                    Or[
+                    CurrentValue["OptionKey"], 
+                    CurrentValue["AltKey"]], SelectionMove[
+                    ButtonNotebook[], All, ButtonCell, AutoScroll -> False]; 
+                    NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    Typeset`newq$$, "WolframAlphaShort", FormatType -> 
+                    "TextForm"], All], Typeset`open$$ = True; 
+                    WolframAlphaClient`Private`extrudeFromFastParse[
+                    "integrate 1/2 (sin(6 \[Theta]))^2 from 0 to \[Pi]/6", 
+                    Defer[
+                    
+                    Integrate[(1/2) Sin[6 Global`\[Theta]]^2, {
+                    Global`\[Theta], 0, Pi/6}]], "Fast parse"]; 
+                    Typeset`open$$ = False]),
+                 Evaluator->Automatic,
+                 Method->"Queued"],
+                Alignment->{Right, Top},
+                StripOnInput->False]},
+              {
+               PaneBox[
+                TagBox[
+                 TooltipBox[
+                  ButtonBox[
+                   PaneSelectorBox[{False->
+                    StyleBox[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                    " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}],
+                    StripOnInput->False,
+                    NumberMarks->False], True->
+                    StyleBox[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                    " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}],
+                    StripOnInput->False,
+                    ShowSyntaxStyles->False,
+                    NumberMarks->False,
+                    FontColor->RGBColor[1, 0.5, 0]]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    BaseStyle->{ShowStringCharacters -> True},
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                   Alignment->Left,
+                   Appearance->None,
+                   BaseStyle->{},
+                   ButtonFunction:>(SelectionMove[
+                    ButtonNotebook[], All, ButtonCell]; NotebookWrite[
+                    ButtonNotebook[], 
+                    Cell[
+                    BoxData[
+                    RowBox[{"Integrate", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "/", "2"}], ")"}], "*", 
+                    RowBox[{
+                    RowBox[{"Sin", "[", 
+                    RowBox[{"6", "*", "\[Theta]"}], "]"}], "^", "2"}]}], ",", 
+                    " ", 
+                    RowBox[{"{", 
+                    RowBox[{"\[Theta]", ",", " ", "0", ",", " ", 
+                    RowBox[{"Pi", "/", "6"}]}], "}"}]}], "]"}]], "Input"], 
+                    All]; SelectionMove[
+                    ButtonNotebook[], After, CellContents]),
+                   Evaluator->Automatic,
+                   ImageSize->Automatic,
+                   Method->"Preemptive"],
+                  DynamicBox[
+                   ToBoxes[
+                    FEPrivate`FrontEndResource["WAStrings", "RemoveResults"], 
+                    StandardForm]]],
+                 Annotation[#, 
+                  Dynamic[
+                   FEPrivate`FrontEndResource["WAStrings", "RemoveResults"]], 
+                  "Tooltip"]& ],
+                AppearanceElements->{},
+                BaseStyle->{ShowStringCharacters -> True, ScriptLevel -> 0},
+                ImageSize->{Automatic, {1, 100}},
+                Scrollbars->{False, Automatic}], "\[SpanFromLeft]"}
+             },
+             AutoDelete->False,
+             BaselinePosition->{1, 1},
+             FrameStyle->GrayLevel[0.85],
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxDividers->{
+              "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Grid"],
+           Alignment->Top,
+           Background->Dynamic[
+             FEPrivate`If[
+              FEPrivate`And[
+               FEPrivate`SameQ[
+                FEPrivate`Head[Typeset`newq$$], String], 
+               FEPrivate`UnsameQ[Typeset`q$$, Typeset`newq$$]], 
+              RGBColor[1., 0.975, 0.95], 
+              GrayLevel[1]]],
+           BaselinePosition->Baseline,
+           FrameStyle->GrayLevel[0.85],
+           ImageSize->Automatic,
+           RoundingRadius->5,
+           StripOnInput->False],
+          
+          EventHandlerTag[{
+           "MouseEntered" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, True], 
+            "MouseExited" :> 
+            FEPrivate`Set[WolframAlphaClient`Private`show$$, False], Method -> 
+            "Preemptive", PassEventsDown -> Automatic, PassEventsUp -> True}]],
+         DynamicModuleValues:>{}]},
+       {
+        InterpretationBox[
+         StyleBox[
+          
+          DynamicBox[FEPrivate`FrontEndResource[
+           "FEExpressions", "NecklaceAnimator"][20]],
+          AnimatorBoxOptions->{ImageSize->20}],
+         Animator[Appearance -> "Necklace", ImageSize -> 20],
+         BaseStyle->{"Deploy"}]}
+      },
+      BaselinePosition->{1, 1},
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+     "Column"]}, Dynamic[
+     TrueQ[Typeset`open$$]],
+    BaseStyle->{Deployed -> True},
+    ImageSize->Automatic],
+   DynamicModuleValues:>{}],
+  BaseStyle->{Deployed -> True},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "WolframAlphaShortInput",ExpressionUUID->\
+"cb39251a-028e-40b0-ad94-1d7691f1a3b6"],
+
+Cell[BoxData[
+ FractionBox["\[Pi]", "24"]], "Output",
+ CellChangeTimes->{
+  3.7631744030777464`*^9},ExpressionUUID->"f7b97c10-1620-4c31-bf80-\
+5d092c26fcb3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1156, 1153},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+Magnification->2.,
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 162, 3, 194, "Title",ExpressionUUID->"c3dc26b0-565c-44f3-b4ec-d67a6bd07a90"],
+Cell[745, 27, 81, 0, 57, "Input",ExpressionUUID->"930c49c3-ae54-4a0c-b7de-4a0a6d889b48"],
+Cell[CellGroupData[{
+Cell[851, 31, 158, 3, 126, "Subchapter",ExpressionUUID->"898daa66-3608-4ee1-9166-c3d844635fa8"],
+Cell[1012, 36, 1038, 24, 179, "Input",ExpressionUUID->"5641eea2-cc5a-46d0-8907-08dc77224b28"],
+Cell[2053, 62, 2194, 66, 424, "Input",ExpressionUUID->"0b059a31-6a57-43f3-ba8d-001d3fc6ae4f"],
+Cell[CellGroupData[{
+Cell[4272, 132, 62815, 1287, 127, "WolframAlphaShortInput",ExpressionUUID->"b4799274-0a68-4950-ae7e-cc8cb5d8ceab"],
+Cell[67090, 1421, 409, 13, 94, "Output",ExpressionUUID->"44055914-966a-4f84-881c-29cbbb21dc14"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[67548, 1440, 158, 3, 126, "Subchapter",ExpressionUUID->"f17c1d92-90ba-4679-b8c9-d60fc248bccf"],
+Cell[67709, 1445, 233, 5, 57, "Input",ExpressionUUID->"9c466f95-b6b9-4513-a09f-c58611dfe926"],
+Cell[67945, 1452, 251, 6, 57, "Input",ExpressionUUID->"162566f6-bcc9-4fe0-9cec-e0e9fd4100f0"],
+Cell[68199, 1460, 4901, 149, 820, "Input",ExpressionUUID->"506c2a9d-7485-4ac2-b4bd-5f2bb25eeed7"],
+Cell[CellGroupData[{
+Cell[73125, 1613, 16786, 408, 127, "WolframAlphaShortInput",ExpressionUUID->"431072e5-8e4e-483d-9935-cc63c5211045"],
+Cell[89914, 2023, 159, 4, 65, "Output",ExpressionUUID->"a529a5ff-cd89-41b9-a04f-36c4fd9db843"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[90122, 2033, 162, 3, 126, "Subchapter",ExpressionUUID->"a0215054-1b4a-46ae-bfc8-7174db87b2b1"],
+Cell[90287, 2038, 369, 8, 97, "Input",ExpressionUUID->"e28eeca0-c3d3-4791-ae93-4887e7999e28"],
+Cell[90659, 2048, 3175, 98, 675, "Input",ExpressionUUID->"b0760079-ac62-4ef0-aca8-2ecb3c3a09f8"],
+Cell[CellGroupData[{
+Cell[93859, 2150, 16166, 392, 127, "WolframAlphaShortInput",ExpressionUUID->"cb39251a-028e-40b0-ad94-1d7691f1a3b6"],
+Cell[110028, 2544, 157, 4, 146, "Output",ExpressionUUID->"f7b97c10-1620-4c31-bf80-5d092c26fcb3"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

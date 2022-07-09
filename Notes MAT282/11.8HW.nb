@@ -1,0 +1,235 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7821,        225]
+NotebookOptionsPosition[      6950,        201]
+NotebookOutlinePosition[      7299,        216]
+CellTagsIndexPosition[      7256,        213]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["11.8 (Homework)", "Title",
+ CellChangeTimes->{{3.764742059009875*^9, 
+  3.764742068535906*^9}},ExpressionUUID->"de040908-9e93-4487-8abf-\
+0f816c509870"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1:", "Section",
+ CellChangeTimes->{{3.764742082332574*^9, 
+  3.7647420852852173`*^9}},ExpressionUUID->"d2ddba84-a17c-4c2e-9490-\
+8a213a00c4a8"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", 
+  RowBox[{"x", ",", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647422901355352`*^9, 3.7647422987847433`*^9}},
+ CellLabel->
+  "In[230]:=",ExpressionUUID->"bb910042-d24d-4e0f-b5d0-372fbef219b0"],
+
+Cell[BoxData[
+ TagBox[
+  PaneBox[
+   StyleBox[
+    FormBox[
+     StyleBox[GridBox[{
+        {Cell[TextData[{
+          "Let ",
+          Cell[BoxData[
+           FormBox[
+            SubscriptBox["u", "k"], TraditionalForm]], "InlineFormula",
+           ExpressionUUID->"0ff6cbf0-549f-4dbf-9cda-34b63dbcf79b"],
+          " be a series with positive terms and suppose"
+         }],
+          LineSpacing->{1, 3},ExpressionUUID->
+          "0cd34d82-ecad-4c1f-9bcb-10f9b2d4a0fc"]},
+        {Cell[BoxData[
+          FormBox[
+           RowBox[{"\[Rho]", "\[Congruent]", 
+            UnderscriptBox["lim", 
+             RowBox[{"k", "\[Rule]", "\[Infinity]"}],
+             LimitsPositioning->False], 
+            FractionBox[
+             SubscriptBox["u", 
+              RowBox[{"k", "+", "1"}]], 
+             SubscriptBox["u", "k"]], "."}], TraditionalForm]], 
+          "NumberedEquation",ExpressionUUID->
+          "748048c9-e8a1-4f59-a437-9c0c06329b64"]},
+        {Cell["Then ",
+          LineSpacing->{1, 3},ExpressionUUID->
+          "073c89f3-75f5-4fc6-b05d-bd2f96621b71"]},
+        {Cell[TextData[{
+          "1. If ",
+          Cell[BoxData[
+           FormBox[
+            RowBox[{"\[Rho]", "<", "1"}], TraditionalForm]], "InlineFormula",
+           ExpressionUUID->"0222b556-4c96-4d0b-b11e-fddb3c461cfe"],
+          ", the series converges. "
+         }], "Item",
+          FontFamily->"Times",ExpressionUUID->
+          "bc34adc4-d495-485a-843f-8d047773fa89"]},
+        {Cell[TextData[{
+          "2. If ",
+          Cell[BoxData[
+           FormBox[
+            RowBox[{"\[Rho]", ">", "1"}], TraditionalForm]], "InlineFormula",
+           ExpressionUUID->"6e681107-51c2-4dde-b113-f8e9087b3b15"],
+          " or ",
+          Cell[BoxData[
+           FormBox[
+            RowBox[{"\[Rho]", "\[LongEqual]", "\[Infinity]"}], 
+            TraditionalForm]], "InlineFormula",ExpressionUUID->
+           "dba2d6ef-530d-46c2-9647-80a5dada6b03"],
+          ", the series diverges. "
+         }], "Item",
+          FontFamily->"Times",ExpressionUUID->
+          "e31a0420-4682-40cd-a653-1a8165874a24"]},
+        {Cell[TextData[{
+          "3. If ",
+          Cell[BoxData[
+           FormBox[
+            RowBox[{"\[Rho]", "\[LongEqual]", "1"}], TraditionalForm]], 
+           "InlineFormula",ExpressionUUID->
+           "b7dc1385-a64b-47f7-94f3-f6168e999665"],
+          ", the series may converge or diverge. "
+         }], "Item",
+          FontFamily->"Times",ExpressionUUID->
+          "7df93731-bb8e-43e4-88b0-3076533a672b"]},
+        {Cell["\<\
+The test is also called the Cauchy ratio test or d\[CloseCurlyQuote]Alembert \
+ratio test.
+
+__________
+2) Set up inequality |x-a|<1; solve to find the interval
+3)Check the end points to see if they are included in the intervalConverg, 
+*converges\[Rule] in the set *diverges\[Rule] not in the set\
+\>",
+          GeneratedCell->False,
+          CellAutoOverwrite->False,
+          LineSpacing->{1, 3},ExpressionUUID->
+          "e910581c-d090-4f7c-a085-20c1d118fe0f"]}
+       },
+       BaseStyle->{AutoMultiplicationSymbol -> False},
+       DefaultBaseStyle->"Column",
+       GridBoxAlignment->{"Columns" -> {{Left}}},
+       GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+       GridBoxItemStyle->{"Columns" -> {{
+            Directive[SpanMaxSize -> DirectedInfinity[1]]}}, "Rows" -> {{
+            Directive[SpanMaxSize -> DirectedInfinity[1]]}}}], "Column"],
+     TraditionalForm], "Output",
+    CellSize->{550, Automatic},
+    AutoStyleOptions->{"HighlightFormattingErrors"->False},
+    ScriptLevel->0,
+    NumberPoint->".",
+    RenderingOptions->{"3DRenderingMethod"->"BSPTreeOrDepthBuffer"},
+    FontFamily->"Times",
+    FontSize->14,
+    Background->None,
+    GraphicsBoxOptions->{DefaultAxesStyle->Directive[
+      GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 1, 
+      "GraphicsAxes"],
+    DefaultBaseStyle->{FontFamily -> "Times", "Graphics"},
+    DefaultFrameStyle->Directive[
+      GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 1, 
+      "GraphicsFrame"],
+    DefaultFrameTicksStyle->Directive[
+     FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"],
+    DefaultTicksStyle->Directive[
+     FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]},
+    Graphics3DBoxOptions->{
+    DefaultBaseStyle->{FontFamily -> "Times", "Graphics3D"}}],
+   BaselinePosition->Baseline,
+   FrameMargins->0],
+  BoxForm`Undeploy,
+  DefaultBaseStyle->{Deployed -> False}]], "Input",
+ CellChangeTimes->{{3.7647424913146424`*^9, 
+  3.7647426546658916`*^9}},ExpressionUUID->"7326635f-8d4a-4cd9-9bb2-\
+b080645d96bc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Rho]", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"Limit", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"(", 
+       RowBox[{"7", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"-", "1"}], ")"}], 
+         RowBox[{"n", "+", "1"}]], 
+        RowBox[{"(", 
+         RowBox[{"n", "+", "1"}], ")"}], "*", 
+        SuperscriptBox["x", 
+         RowBox[{"n", "-", "1"}]]}], ")"}], 
+      RowBox[{"7", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"-", "1"}], ")"}], "n"], "*", "n", "*", 
+       SuperscriptBox["x", "n"]}]], ",", 
+     RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}], " ", "//", 
+   "TraditionalForm"}]}]], "Input",
+ CellChangeTimes->{{3.7647430698569613`*^9, 3.764743245283183*^9}},
+ CellLabel->
+  "In[235]:=",ExpressionUUID->"bfd6df6c-f961-47ad-94b9-273c6919e986"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"-", 
+   FractionBox["1", "x"]}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.764743256790017*^9},
+ CellLabel->
+  "Out[235]//TraditionalForm=",ExpressionUUID->"12e52e0c-d6b4-4f9b-8c5d-\
+edc732332d4c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{759, 813},
+WindowMargins->{{206, Automatic}, {112, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"ReverseColor.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 158, 3, 228, "Title",ExpressionUUID->"de040908-9e93-4487-8abf-0f816c509870"],
+Cell[CellGroupData[{
+Cell[763, 29, 157, 3, 132, "Section",ExpressionUUID->"d2ddba84-a17c-4c2e-9490-8a213a00c4a8"],
+Cell[923, 34, 237, 5, 115, "Input",ExpressionUUID->"bb910042-d24d-4e0f-b5d0-372fbef219b0"],
+Cell[1163, 41, 4634, 117, 579, "Input",ExpressionUUID->"7326635f-8d4a-4cd9-9bb2-b080645d96bc"],
+Cell[CellGroupData[{
+Cell[5822, 162, 845, 25, 264, "Input",ExpressionUUID->"bfd6df6c-f961-47ad-94b9-273c6919e986"],
+Cell[6670, 189, 240, 7, 203, "Output",ExpressionUUID->"12e52e0c-d6b4-4f9b-8c5d-edc732332d4c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

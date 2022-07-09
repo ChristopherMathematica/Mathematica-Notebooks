@@ -1,0 +1,809 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     27483,        799]
+NotebookOptionsPosition[     20614,        679]
+NotebookOutlinePosition[     20962,        694]
+CellTagsIndexPosition[     20919,        691]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["11.1B Homework", "Title",
+ CellChangeTimes->{{3.764738941113578*^9, 
+  3.764738947908063*^9}},ExpressionUUID->"c93990e2-d59b-427c-b44b-\
+ddf4ead53378"],
+
+Cell[CellGroupData[{
+
+Cell["Problem 1:", "Section",
+ CellChangeTimes->{{3.7647389619517097`*^9, 
+  3.764738964096811*^9}},ExpressionUUID->"1c29f236-6e6d-4502-9334-\
+51f8dc3b1162"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Find", " ", "a", " ", "formula", " ", "for", " ", "the", " ", "general", 
+    " ", "term", " ", "an", " ", "of", " ", "the", " ", "sequence"}], ",", 
+   RowBox[{
+   "assuming", " ", "that", " ", "the", " ", "pattern", " ", "of", " ", "the",
+     " ", "first", " ", "few", " ", "terms", " ", 
+    RowBox[{"continues", ".", 
+     RowBox[{"(", 
+      RowBox[{
+      "Assume", " ", "that", " ", "n", " ", "begins", " ", "with", " ", 
+       "1."}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.764738969341962*^9, 
+  3.764738977995821*^9}},ExpressionUUID->"d5edc434-0948-490e-b89d-\
+256e47e59e10"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindSequenceFunction", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "2"}], ",", " ", 
+     RowBox[{"4", "/", "3"}], ",", " ", 
+     RowBox[{
+      RowBox[{"-", "8"}], "/", "9"}], ",", " ", 
+     RowBox[{"16", "/", "27"}], ",", " ", 
+     RowBox[{
+      RowBox[{"-", "32"}], "/", "81"}]}], "}"}], ",", " ", "n"}], 
+  "]"}]], "Input",ExpressionUUID->"bb0f204c-584e-4d50-a3de-4cab48fc4133"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"-", "2"}], ")"}], "n"], " ", 
+  SuperscriptBox["3", 
+   RowBox[{"1", "-", "n"}]]}]], "Output",
+ CellChangeTimes->{3.7647393033384657`*^9},
+ CellLabel->
+  "Out[193]=",ExpressionUUID->"8cbb5aa1-8cf3-49df-9814-c10897c480e7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 2:", "Section",
+ CellChangeTimes->{{3.764739395329551*^9, 
+  3.764739399251993*^9}},ExpressionUUID->"f7b269a3-a400-4585-81b3-\
+e75fa0c910a9"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7647395440364976`*^9, 
+  3.7647395497177353`*^9}},ExpressionUUID->"cf989288-f1e5-4eff-becc-\
+b33574543320"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   SuperscriptBox["\[ExponentialE]", 
+    FractionBox["6", "n"]]}], ";"}]], "Input",
+ CellChangeTimes->{{3.764739403055772*^9, 3.764739453550176*^9}},
+ CellLabel->
+  "In[194]:=",ExpressionUUID->"872cf23e-cf53-4737-9670-6ec93dc218ab"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647394606032047`*^9, 3.7647394750006933`*^9}},
+ CellLabel->
+  "In[195]:=",ExpressionUUID->"6e47119f-facc-4873-982c-dbd3acc344af"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.764739476359001*^9},
+ CellLabel->
+  "Out[195]=",ExpressionUUID->"b513ecd8-c1cb-49a4-86da-37ee4667ad8b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 3:", "Section",
+ CellChangeTimes->{{3.764739492654602*^9, 
+  3.764739496631485*^9}},ExpressionUUID->"db225783-a300-45a1-af23-\
+a57b4c9b318f"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", 
+  RowBox[{"F", ",", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647395041692743`*^9, 3.7647395169842453`*^9}},
+ CellLabel->
+  "In[196]:=",ExpressionUUID->"20ef258b-ef24-4ab4-87ac-c3a696ef7537"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.764739528068962*^9, 3.7647395282850103`*^9}, {
+  3.764739568264083*^9, 
+  3.764739570544585*^9}},ExpressionUUID->"aa0cef62-067a-425e-94e0-\
+f1eb11b2aafb"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["6", "n"], "+", "2"}], 
+    SuperscriptBox["7", "n"]]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647395755286856`*^9, 3.764739603117688*^9}},
+ CellLabel->
+  "In[197]:=",ExpressionUUID->"25585584-277c-464c-b776-4812084c2237"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764739630659856*^9, 3.7647396506735215`*^9}},
+ CellLabel->
+  "In[198]:=",ExpressionUUID->"118ff0da-39c4-4d02-b11d-e330740f8157"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.764739651691733*^9},
+ CellLabel->
+  "Out[198]=",ExpressionUUID->"a733a71d-0207-4ed9-8bd3-9dbe08fee87c"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 4:", "Section",
+ CellChangeTimes->{{3.764739695458413*^9, 
+  3.7647396983864117`*^9}},ExpressionUUID->"551117e8-3a79-4f8d-b5df-\
+9204a2b25a02"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.764739702697462*^9, 
+  3.764739711933779*^9}},ExpressionUUID->"d0e5a2cb-bb7d-4da7-a982-\
+1a189f455110"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", 
+  RowBox[{"F", ",", "n"}], "]"}]], "Input",
+ CellChangeTimes->{{3.764739715762678*^9, 3.7647397216389637`*^9}},
+ CellLabel->
+  "In[199]:=",ExpressionUUID->"25d9b6db-4a4b-47e9-a57d-5390bd1801d4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", 
+   SqrtBox[
+    FractionBox[
+     RowBox[{"n", "+", "6"}], 
+     RowBox[{
+      RowBox[{"49", "n"}], "+", "6"}]]]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647397258538914`*^9, 3.764739769475829*^9}},
+ CellLabel->
+  "In[200]:=",ExpressionUUID->"61a17714-6943-406c-8bcd-489cfaf83cd1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647397731808214`*^9, 3.7647397870358706`*^9}},
+ CellLabel->
+  "In[201]:=",ExpressionUUID->"ec4633fb-c082-4746-81d9-2d0df03404aa"],
+
+Cell[BoxData[
+ FractionBox["1", "7"]], "Output",
+ CellChangeTimes->{3.7647397880950985`*^9},
+ CellLabel->
+  "Out[201]=",ExpressionUUID->"31f59d9b-f274-435a-be11-6772e903eb7e"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 5:", "Section",
+ CellChangeTimes->{{3.764739832507532*^9, 
+  3.7647398374086046`*^9}},ExpressionUUID->"751e42c7-a73c-4801-856b-\
+976bfdce3562"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7647398418098035`*^9, 
+  3.764739845759678*^9}},ExpressionUUID->"07816adb-d2af-4952-b3ce-\
+a8b22a82541d"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.764739850378848*^9, 3.7647398540236487`*^9}},
+ CellLabel->
+  "In[202]:=",ExpressionUUID->"70e9ca9e-e784-45e7-be4b-7d4d6ea2b238"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", 
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"-", "1"}], ")"}], "n"], "/", 
+    RowBox[{"(", 
+     RowBox[{"8", "*", 
+      SqrtBox["n"]}], ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647398605600696`*^9, 3.764739952243847*^9}, {
+  3.764740013746539*^9, 3.7647400170511956`*^9}},
+ CellLabel->
+  "In[206]:=",ExpressionUUID->"0f419624-9480-47a7-9bdf-799485439df6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764739954437316*^9, 3.764739972920158*^9}},
+ CellLabel->
+  "In[207]:=",ExpressionUUID->"78cae25d-6ae6-4f73-a7b9-5e55c390ef1f"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.7647399749116096`*^9, 3.7647400224447303`*^9},
+ CellLabel->
+  "Out[207]=",ExpressionUUID->"ee9fc972-7a63-4cd3-898c-61c6cdba9bd4"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 6:", "Section",
+ CellChangeTimes->{{3.764740039302849*^9, 
+  3.7647400417537746`*^9}},ExpressionUUID->"3096a764-d9ad-4b40-a3d4-\
+73e14424a1a9"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7647400888891473`*^9, 
+  3.7647400962657785`*^9}},ExpressionUUID->"5ea4afdc-8cfd-4122-a3ea-\
+32d8189bd72a"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.7647401014299126`*^9, 3.7647401044139977`*^9}},
+ CellLabel->
+  "In[208]:=",ExpressionUUID->"bcb3dd69-476e-432b-952e-7cd3be20b45e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   RowBox[{"Cos", "[", 
+    FractionBox["2", "n"], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.764740107939289*^9, 3.7647401289139123`*^9}},
+ CellLabel->
+  "In[209]:=",ExpressionUUID->"e57d3aa8-031e-4052-925a-ead908119ec1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647401317080264`*^9, 3.7647401472536154`*^9}},
+ CellLabel->
+  "In[210]:=",ExpressionUUID->"255f6672-a743-4680-8605-e206d1fb32c1"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.764740148287833*^9},
+ CellLabel->
+  "Out[210]=",ExpressionUUID->"19c5493b-154b-4f6b-ac24-69a29baf31aa"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 7:", "Section",
+ CellChangeTimes->{{3.7647401727633314`*^9, 
+  3.7647401782455473`*^9}},ExpressionUUID->"4ef75cc7-6207-45cf-89ab-\
+adc9c9c844a4"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7647401812592173`*^9, 
+  3.764740184894871*^9}},ExpressionUUID->"b15c012c-db83-4d1e-a65f-\
+cadf46c46e36"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.7647401920219307`*^9, 3.7647401953115373`*^9}},
+ CellLabel->
+  "In[211]:=",ExpressionUUID->"3b768223-371f-4dce-aa18-a4bef2f065d7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   RowBox[{
+    RowBox[{"Log", "[", "n", "]"}], "/", 
+    RowBox[{"Log", "[", 
+     RowBox[{"2", "n"}], "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647401983972178`*^9, 3.7647402408464355`*^9}},
+ CellLabel->
+  "In[212]:=",ExpressionUUID->"9fa59ff0-e64d-43b8-bc85-8ec0a06703b1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7647402890316133`*^9, 3.7647403213570194`*^9}},
+ CellLabel->
+  "In[213]:=",ExpressionUUID->"025ac812-faf9-4220-9dca-3c3c1bb8b4cb"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.7647403223882437`*^9},
+ CellLabel->
+  "Out[213]=",ExpressionUUID->"10106473-806e-40df-8a43-0de17372c40b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 8:", "Section",
+ CellChangeTimes->{{3.7647405957659807`*^9, 
+  3.7647406015132465`*^9}},ExpressionUUID->"5989fbc1-1c6e-49a1-bcdf-\
+1792034ae49b"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.764740604648934*^9, 
+  3.764740623226575*^9}},ExpressionUUID->"d59176b2-729f-4281-8f7b-\
+5c0bd71308c0"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.764740628106084*^9, 3.76474063077567*^9}},
+ CellLabel->
+  "In[214]:=",ExpressionUUID->"ddc03a54-63cd-494b-bc80-7e665425f5a5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", "n"], "+", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", "n"}]]}], ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"2", "n"}]], "-", "6"}], ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.764740689807486*^9, 3.764740763681353*^9}, {
+  3.764740814661065*^9, 3.764740822919941*^9}},
+ CellLabel->
+  "In[217]:=",ExpressionUUID->"0bcdac80-a870-42d1-b2fd-779a2a0ac79d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764740766279916*^9, 3.764740784117536*^9}},
+ CellLabel->
+  "In[218]:=",ExpressionUUID->"2dc03ba2-33b5-4fbe-90f2-9c4f17d0061c"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.7647407855148444`*^9, 3.7647408285085287`*^9},
+ CellLabel->
+  "Out[218]=",ExpressionUUID->"a41fc4fe-7727-4500-a4b6-053eb4c74fc3"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 9:", "Section",
+ CellChangeTimes->{{3.7647408614005146`*^9, 
+  3.7647408645371966`*^9}},ExpressionUUID->"31cf8a1b-9b42-4a7e-9196-\
+9afb0887dfed"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+   "Determine", " ", "whether", " ", "the", " ", "sequence", " ", "converges",
+     " ", "or", " ", 
+    RowBox[{"diverges", ".", "If"}], " ", "it", " ", "converges"}], ",", 
+   RowBox[{"find", " ", "the", " ", 
+    RowBox[{"limit", ".", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+       "If", " ", "an", " ", "answer", " ", "does", " ", "not", " ", 
+        "exist"}], ",", 
+       RowBox[{"enter", " ", 
+        RowBox[{"DNE", "."}]}]}], ")"}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.7647408755994964`*^9, 
+  3.764740880181507*^9}},ExpressionUUID->"577b6402-9162-4406-9194-\
+c73d9005d152"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.7647408848665347`*^9, 3.7647408919630785`*^9}},
+ CellLabel->
+  "In[219]:=",ExpressionUUID->"46fc5c7e-5a26-42f8-a222-49ac07077c4c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   RowBox[{
+    SuperscriptBox["n", "2"], "*", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"-", "n"}]]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647408968780646`*^9, 3.7647409416405573`*^9}},
+ CellLabel->
+  "In[220]:=",ExpressionUUID->"261f2e39-f8d5-4b45-b7db-13472525109a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764740944755599*^9, 3.76474095970571*^9}},
+ CellLabel->
+  "In[221]:=",ExpressionUUID->"107eefb4-c56b-4d3f-a03b-c8f0dd5c2048"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.764740960472875*^9},
+ CellLabel->
+  "Out[221]=",ExpressionUUID->"c008f62a-44bb-4284-9c96-b84d8737e84b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 10:", "Section",
+ CellChangeTimes->{{3.7647409851299305`*^9, 
+  3.764740988231617*^9}},ExpressionUUID->"3aea20ab-f4fc-487b-b290-\
+b3b2318b1913"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.7647409924965544`*^9, 3.7647409982778273`*^9}},
+ CellLabel->
+  "In[222]:=",ExpressionUUID->"80af9185-9dbb-4725-bdcd-8e70993eec7d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", " ", 
+   RowBox[{
+    RowBox[{"Log", "[", 
+     RowBox[{"n", "+", "6"}], "]"}], "-", 
+    RowBox[{"Log", "[", "n", "]"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647410055593553`*^9, 3.7647410562154784`*^9}},
+ CellLabel->
+  "In[223]:=",ExpressionUUID->"a452f010-0d63-4d5d-a627-f06208e24bd8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764741059795393*^9, 3.764741081925109*^9}},
+ CellLabel->
+  "In[224]:=",ExpressionUUID->"3b21d1fd-500e-4945-995c-b6be3e1bbe03"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.7647410872945213`*^9},
+ CellLabel->
+  "Out[224]=",ExpressionUUID->"e0fe6ee6-cdd7-422a-9558-c1bafe53fcc9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Problem 11:", "Section",
+ CellChangeTimes->{{3.7647411120873566`*^9, 
+  3.7647411141188164`*^9}},ExpressionUUID->"d625a41c-ce6d-4bd2-b12d-\
+1df2ece6249c"],
+
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "F", "]"}]], "Input",
+ CellChangeTimes->{{3.764741125432658*^9, 3.764741129120777*^9}},
+ CellLabel->
+  "In[225]:=",ExpressionUUID->"d8e818be-4dc3-45b9-bc4e-191d3ceab0ed"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"F", "[", "n_", "]"}], ":=", 
+   RadicalBox[
+    SuperscriptBox["2", 
+     RowBox[{"(", 
+      RowBox[{"4", "+", 
+       RowBox[{"3", "n"}]}], ")"}]], "n"]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7647411317659054`*^9, 3.764741232234132*^9}},
+ CellLabel->
+  "In[226]:=",ExpressionUUID->"46321cec-e744-4fe3-9999-b14dff5be745"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Limit", "[", 
+  RowBox[{
+   RowBox[{"F", "[", "n", "]"}], ",", 
+   RowBox[{"n", "\[Rule]", " ", "\[Infinity]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.764741244969799*^9, 3.7647412557694817`*^9}},
+ CellLabel->
+  "In[227]:=",ExpressionUUID->"cb1ba2bf-ee73-4cb0-a4b0-5f667f9487a2"],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{3.76474125873588*^9},
+ CellLabel->
+  "Out[227]=",ExpressionUUID->"e6e76f40-8d67-455a-a0b2-c410d798dcd7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1094, 1153},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"ReverseColor.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 157, 3, 228, "Title",ExpressionUUID->"c93990e2-d59b-427c-b44b-ddf4ead53378"],
+Cell[CellGroupData[{
+Cell[762, 29, 157, 3, 132, "Section",ExpressionUUID->"1c29f236-6e6d-4502-9334-51f8dc3b1162"],
+Cell[922, 34, 658, 16, 205, "Input",ExpressionUUID->"d5edc434-0948-490e-b89d-256e47e59e10"],
+Cell[CellGroupData[{
+Cell[1605, 54, 431, 12, 129, "Input",ExpressionUUID->"bb0f204c-584e-4d50-a3de-4cab48fc4133"],
+Cell[2039, 68, 293, 9, 122, "Output",ExpressionUUID->"8cbb5aa1-8cf3-49df-9814-c10897c480e7"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2381, 83, 155, 3, 132, "Section",ExpressionUUID->"f7b269a3-a400-4585-81b3-e75fa0c910a9"],
+Cell[2539, 88, 661, 18, 205, "Input",ExpressionUUID->"cf989288-f1e5-4eff-becc-b33574543320"],
+Cell[3203, 108, 314, 8, 130, "Input",ExpressionUUID->"872cf23e-cf53-4737-9670-6ec93dc218ab"],
+Cell[CellGroupData[{
+Cell[3542, 120, 308, 7, 115, "Input",ExpressionUUID->"6e47119f-facc-4873-982c-dbd3acc344af"],
+Cell[3853, 129, 153, 3, 122, "Output",ExpressionUUID->"b513ecd8-c1cb-49a4-86da-37ee4667ad8b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4055, 138, 155, 3, 132, "Section",ExpressionUUID->"db225783-a300-45a1-af23-a57b4c9b318f"],
+Cell[4213, 143, 237, 5, 115, "Input",ExpressionUUID->"20ef258b-ef24-4ab4-87ac-c3a696ef7537"],
+Cell[4453, 150, 708, 19, 205, "Input",ExpressionUUID->"aa0cef62-067a-425e-94e0-f1eb11b2aafb"],
+Cell[5164, 171, 354, 10, 145, "Input",ExpressionUUID->"25585584-277c-464c-b776-4812084c2237"],
+Cell[CellGroupData[{
+Cell[5543, 185, 306, 7, 115, "Input",ExpressionUUID->"118ff0da-39c4-4d02-b11d-e330740f8157"],
+Cell[5852, 194, 153, 3, 122, "Output",ExpressionUUID->"a733a71d-0207-4ed9-8bd3-9dbe08fee87c"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6054, 203, 157, 3, 132, "Section",ExpressionUUID->"551117e8-3a79-4f8d-b5df-9204a2b25a02"],
+Cell[6214, 208, 657, 18, 205, "Input",ExpressionUUID->"d0e5a2cb-bb7d-4da7-a982-1a189f455110"],
+Cell[6874, 228, 235, 5, 115, "Input",ExpressionUUID->"25d9b6db-4a4b-47e9-a57d-5390bd1801d4"],
+Cell[7112, 235, 360, 11, 166, "Input",ExpressionUUID->"61a17714-6943-406c-8bcd-489cfaf83cd1"],
+Cell[CellGroupData[{
+Cell[7497, 250, 308, 7, 115, "Input",ExpressionUUID->"ec4633fb-c082-4746-81d9-2d0df03404aa"],
+Cell[7808, 259, 175, 4, 146, "Output",ExpressionUUID->"31f59d9b-f274-435a-be11-6772e903eb7e"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8032, 269, 157, 3, 132, "Section",ExpressionUUID->"751e42c7-a73c-4801-856b-976bfdce3562"],
+Cell[8192, 274, 659, 18, 205, "Input",ExpressionUUID->"07816adb-d2af-4952-b3ce-a8b22a82541d"],
+Cell[8854, 294, 212, 4, 115, "Input",ExpressionUUID->"70e9ca9e-e784-45e7-be4b-7d4d6ea2b238"],
+Cell[9069, 300, 465, 14, 133, "Input",ExpressionUUID->"0f419624-9480-47a7-9bdf-799485439df6"],
+Cell[CellGroupData[{
+Cell[9559, 318, 304, 7, 115, "Input",ExpressionUUID->"78cae25d-6ae6-4f73-a7b9-5e55c390ef1f"],
+Cell[9866, 327, 179, 3, 122, "Output",ExpressionUUID->"ee9fc972-7a63-4cd3-898c-61c6cdba9bd4"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10094, 336, 157, 3, 132, "Section",ExpressionUUID->"3096a764-d9ad-4b40-a3d4-73e14424a1a9"],
+Cell[10254, 341, 661, 18, 205, "Input",ExpressionUUID->"5ea4afdc-8cfd-4122-a3ea-32d8189bd72a"],
+Cell[10918, 361, 214, 4, 115, "Input",ExpressionUUID->"bcb3dd69-476e-432b-952e-7cd3be20b45e"],
+Cell[11135, 367, 308, 8, 144, "Input",ExpressionUUID->"e57d3aa8-031e-4052-925a-ead908119ec1"],
+Cell[CellGroupData[{
+Cell[11468, 379, 308, 7, 115, "Input",ExpressionUUID->"255f6672-a743-4680-8605-e206d1fb32c1"],
+Cell[11779, 388, 153, 3, 122, "Output",ExpressionUUID->"19c5493b-154b-4f6b-ac24-69a29baf31aa"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11981, 397, 159, 3, 132, "Section",ExpressionUUID->"4ef75cc7-6207-45cf-89ab-adc9c9c844a4"],
+Cell[12143, 402, 659, 18, 205, "Input",ExpressionUUID->"b15c012c-db83-4d1e-a65f-cadf46c46e36"],
+Cell[12805, 422, 214, 4, 115, "Input",ExpressionUUID->"3b768223-371f-4dce-aa18-a4bef2f065d7"],
+Cell[13022, 428, 365, 10, 115, "Input",ExpressionUUID->"9fa59ff0-e64d-43b8-bc85-8ec0a06703b1"],
+Cell[CellGroupData[{
+Cell[13412, 442, 308, 7, 115, "Input",ExpressionUUID->"025ac812-faf9-4220-9dca-3c3c1bb8b4cb"],
+Cell[13723, 451, 155, 3, 122, "Output",ExpressionUUID->"10106473-806e-40df-8a43-0de17372c40b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13927, 460, 159, 3, 132, "Section",ExpressionUUID->"5989fbc1-1c6e-49a1-bcdf-1792034ae49b"],
+Cell[14089, 465, 657, 18, 205, "Input",ExpressionUUID->"d59176b2-729f-4281-8f7b-5c0bd71308c0"],
+Cell[14749, 485, 209, 4, 115, "Input",ExpressionUUID->"ddc03a54-63cd-494b-bc80-7e665425f5a5"],
+Cell[14961, 491, 594, 17, 122, "Input",ExpressionUUID->"0bcdac80-a870-42d1-b2fd-779a2a0ac79d"],
+Cell[CellGroupData[{
+Cell[15580, 512, 304, 7, 115, "Input",ExpressionUUID->"2dc03ba2-33b5-4fbe-90f2-9c4f17d0061c"],
+Cell[15887, 521, 179, 3, 122, "Output",ExpressionUUID->"a41fc4fe-7727-4500-a4b6-053eb4c74fc3"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16115, 530, 159, 3, 132, "Section",ExpressionUUID->"31cf8a1b-9b42-4a7e-9196-9afb0887dfed"],
+Cell[16277, 535, 659, 18, 205, "Input",ExpressionUUID->"577b6402-9162-4406-9194-c73d9005d152"],
+Cell[16939, 555, 214, 4, 115, "Input",ExpressionUUID->"46fc5c7e-5a26-42f8-a222-49ac07077c4c"],
+Cell[17156, 561, 367, 10, 117, "Input",ExpressionUUID->"261f2e39-f8d5-4b45-b7db-13472525109a"],
+Cell[CellGroupData[{
+Cell[17548, 575, 303, 7, 115, "Input",ExpressionUUID->"107eefb4-c56b-4d3f-a03b-c8f0dd5c2048"],
+Cell[17854, 584, 153, 3, 122, "Output",ExpressionUUID->"c008f62a-44bb-4284-9c96-b84d8737e84b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18056, 593, 158, 3, 132, "Section",ExpressionUUID->"3aea20ab-f4fc-487b-b290-b3b2318b1913"],
+Cell[18217, 598, 214, 4, 115, "Input",ExpressionUUID->"80af9185-9dbb-4725-bdcd-8e70993eec7d"],
+Cell[18434, 604, 370, 10, 115, "Input",ExpressionUUID->"a452f010-0d63-4d5d-a627-f06208e24bd8"],
+Cell[CellGroupData[{
+Cell[18829, 618, 304, 7, 115, "Input",ExpressionUUID->"3b21d1fd-500e-4945-995c-b6be3e1bbe03"],
+Cell[19136, 627, 155, 3, 122, "Output",ExpressionUUID->"e0fe6ee6-cdd7-422a-9558-c1bafe53fcc9"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19340, 636, 160, 3, 132, "Section",ExpressionUUID->"d625a41c-ce6d-4bd2-b12d-1df2ece6249c"],
+Cell[19503, 641, 210, 4, 115, "Input",ExpressionUUID->"d8e818be-4dc3-45b9-bc4e-191d3ceab0ed"],
+Cell[19716, 647, 372, 11, 134, "Input",ExpressionUUID->"46321cec-e744-4fe3-9999-b14dff5be745"],
+Cell[CellGroupData[{
+Cell[20113, 662, 306, 7, 115, "Input",ExpressionUUID->"cb1ba2bf-ee73-4cb0-a4b0-5f667f9487a2"],
+Cell[20422, 671, 152, 3, 155, "Output",ExpressionUUID->"e6e76f40-8d67-455a-a0b2-c410d798dcd7"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3362,        110]
+NotebookOptionsPosition[      2446,         87]
+NotebookOutlinePosition[      2794,        102]
+CellTagsIndexPosition[      2751,         99]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Unit 5: Chapter 11", "Title",
+ CellChangeTimes->{{3.764312253354169*^9, 
+  3.7643122582905855`*^9}},ExpressionUUID->"1c8af772-673a-47ac-83e0-\
+52895b6f896e"],
+
+Cell[CellGroupData[{
+
+Cell["Sequences", "Chapter",
+ CellChangeTimes->{{3.7643122741863623`*^9, 
+  3.7643122760699744`*^9}},ExpressionUUID->"bb09eeb6-9230-4ada-baf8-\
+c2ce230e0278"],
+
+Cell["\<\
+A sequence is an ordered list of terms or elements. Example is the following:\
+\>", "Text",
+ CellChangeTimes->{{3.7643122987523966`*^9, 
+  3.7643123239364257`*^9}},ExpressionUUID->"bff0c74e-4529-45d8-b7bc-\
+823972edcd75"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["S", "1"], "=", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "6", ",", "8", ",", "10"}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.764312325589036*^9, 
+  3.764312371129671*^9}},ExpressionUUID->"efbd8d8c-fc48-4e34-b5fe-\
+a0a94d3cf190"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["S", "2"], "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "8", ",", "16"}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7643123656968317`*^9, 
+  3.7643124075466585`*^9}},ExpressionUUID->"54c7e5fd-7d85-466b-b327-\
+9792bb91e6cc"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["S", "3"], "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "1", ",", "2", ",", "3", ",", "5", ",", "8", ",", "13"}], 
+    "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.764312424167013*^9, 3.764312463392314*^9}, {
+  3.7643125856679387`*^9, 
+  3.764312586729475*^9}},ExpressionUUID->"be3b4fde-395f-4b0b-9337-\
+0f0e54b5f2d8"],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["S", "a"], "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    SubscriptBox["a", "1"], ",", "a"}]}]}]], "Input",
+ CellChangeTimes->{{3.7643126089826045`*^9, 
+  3.764312626343717*^9}},ExpressionUUID->"d63df763-2b07-48d8-9212-\
+2469815c06aa"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1095, 1153},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 163, 3, 96, "Title",ExpressionUUID->"1c8af772-673a-47ac-83e0-52895b6f896e"],
+Cell[CellGroupData[{
+Cell[768, 29, 158, 3, 67, "Chapter",ExpressionUUID->"bb09eeb6-9230-4ada-baf8-c2ce230e0278"],
+Cell[929, 34, 231, 5, 34, "Text",ExpressionUUID->"bff0c74e-4529-45d8-b7bc-823972edcd75"],
+Cell[1163, 41, 299, 9, 28, "Input",ExpressionUUID->"efbd8d8c-fc48-4e34-b5fe-a0a94d3cf190"],
+Cell[1465, 52, 295, 8, 28, "Input",ExpressionUUID->"54c7e5fd-7d85-466b-b327-9792bb91e6cc"],
+Cell[1763, 62, 382, 11, 28, "Input",ExpressionUUID->"be3b4fde-395f-4b0b-9337-0f0e54b5f2d8"],
+Cell[2148, 75, 270, 8, 28, "Input",ExpressionUUID->"d63df763-2b07-48d8-9212-2469815c06aa"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
